@@ -1,0 +1,27 @@
+{% block body %}
+
+{#
+
+#}
+
+<div class="widget" id="widget-{{widget.id}}">
+{% block actions %}{{cms_widget_actions(widget)}}{% endblock actions %}
+
+{% block content %}
+{#Booya ! Replace this default rendering by your own logic#}
+<ul>
+    <li>
+        {{widget.title}}
+    </li>
+    <li>
+        {{widget.link}}
+    </li>
+    <li>
+        {{widget.target}}
+    </li>
+</ul>
+{#Enjoy !#}
+{% endblock content %}
+</div>
+
+{% endblock body %}

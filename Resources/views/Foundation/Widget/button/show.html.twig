@@ -1,0 +1,11 @@
+{# Foundaion button render #}
+
+{% extends "VictoireButtonBundle:Commons:Widget/Button/show.html.twig"%}
+
+
+{% block content %}
+<a href="{{widget.link}}" target="{{ widget.target|default('_parent') }}" title="{{widget.title}}" class="button">
+    {{widget.title}}
+</a>
+
+{% endblock content %}
