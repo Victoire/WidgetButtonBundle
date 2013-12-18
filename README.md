@@ -9,7 +9,23 @@ Then you just have to run the following composer command :
 
     php composer.phar require victoire/button-bundle
 
-The button bundle handle Bootstrap and Foundation view.
+The button bundle handles Bootstrap and Foundation view.
+
+
+Do not forget to add the bundle in your AppKernel !
+
+    class AppKernel extends Kernel
+    {
+        public function registerBundles()
+        {
+            $bundles = array(
+                ...
+                new Victoire\ButtonBundle\VictoireButtonBundle(),
+            );
+    
+            return $bundles;
+        }
+    }
 
 [![Licence Creative Commons](http://i.creativecommons.org/l/by-nc-sa/3.0/fr/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/3.0/fr/)
 
