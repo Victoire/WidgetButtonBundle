@@ -4,22 +4,14 @@
 
 #}
 
-<div class="widget" id="widget-{{widget.id}}">
+<div class="widget widget-button" id="widget-{{widget.id}}">
 {% block actions %}{{cms_widget_actions(widget)}}{% endblock actions %}
 
 {% block content %}
 {#Booya ! Replace this default rendering by your own logic#}
-<ul>
-    <li>
-        {{widget.title}}
-    </li>
-    <li>
-        {{widget.link}}
-    </li>
-    <li>
-        {{widget.target}}
-    </li>
-</ul>
+<a href="{{widget.link}}" target="{{ widget.target|default('_parent') }}" title="{{widget.hoverTitle}}" class="button button-{{ widget.size }} button-{{ widget.style }}">
+    {{widget.title}}
+</a>
 {#Enjoy !#}
 {% endblock content %}
 </div>

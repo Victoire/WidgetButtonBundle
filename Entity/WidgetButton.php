@@ -24,6 +24,13 @@ class WidgetButton extends Widget
     /**
      * @var string
      *
+     * @ORM\Column(name="hoverTitle", type="string", length=55)
+     */
+    private $hoverTitle;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="link", type="string", length=255)
      */
     private $link;
@@ -70,6 +77,28 @@ class WidgetButton extends Widget
     public function getTitle()
     {
         return $this->title;
+    }
+
+    /**
+     * Set hoverTitle
+     *
+     * @param string $hoverTitle
+     */
+    public function setHoverTitle($hoverTitle)
+    {
+        $this->hoverTitle = $hoverTitle;
+
+        return $this;
+    }
+
+    /**
+     * Get hoverTitle
+     *
+     * @return string
+     */
+    public function getHoverTitle()
+    {
+        return $this->hoverTitle;
     }
 
     /**

@@ -28,6 +28,8 @@ class WidgetButtonType extends WidgetType
             $builder
                 ->add('title', null, array(
                     'label'   => 'widget.button.form.label.title'))
+                ->add('hoverTitle', null, array(
+                    'label'   => 'widget.button.form.label.hoverTitle'))
                 ->add('link', null, array(
                     'label'   => 'widget.button.form.label.link'))
                 ->add('target', null, array(

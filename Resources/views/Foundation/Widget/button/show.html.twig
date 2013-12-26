@@ -4,7 +4,7 @@
 
 
 {% block content %}
-<a href="{{widget.link}}" target="{{ widget.target|default('_parent') }}" title="{{widget.title}}" class="button">
+<a href="{{widget.link}}" target="{{ widget.target|default('_parent') }}" title="{{widget.hoverTitle}}" class="button button-{{ widget.size }} button-{{ widget.style }}">
     {{widget.title}}
 </a>
 
