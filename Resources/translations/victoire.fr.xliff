@@ -81,6 +81,11 @@
         <target>Libellé</target>
         <jms:reference-file line="30">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
       </trans-unit>
+      <trans-unit resname="widget.button.new.action.label">
+        <source>widget.button.new.action.label</source>
+        <target state="new">Bouton</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
+
