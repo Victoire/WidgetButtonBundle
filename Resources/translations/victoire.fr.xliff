@@ -83,7 +83,15 @@
       </trans-unit>
       <trans-unit resname="widget.button.new.action.label">
         <source>widget.button.new.action.label</source>
-        <target state="new">Bouton</target>
+        <target>Bouton</target>
+      </trans-unit>
+      <trans-unit resname="modal.form.widget.type.button.label">
+        <source>modal.form.widget.type.button.label</source>
+        <target>Bouton</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.label.hoverTitle">
+        <source>widget.button.form.label.hoverTitle</source>
+        <target>Texte au survol</target>
       </trans-unit>
     </body>
   </file>

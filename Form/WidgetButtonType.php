@@ -27,7 +27,8 @@ class WidgetButtonType extends WidgetType
             //if no entity is given, we generate the static form
             $builder
                 ->add('title', null, array(
-                    'label'   => 'widget.button.form.label.title'))
+                    'label'      => 'widget.button.form.label.title'
+                ))
                 ->add('hoverTitle', null, array(
                     'label'   => 'widget.button.form.label.hoverTitle'))
                 ->add('link', null, array(
