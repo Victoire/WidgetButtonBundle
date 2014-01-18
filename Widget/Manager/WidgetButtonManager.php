@@ -44,7 +44,7 @@ protected $container;
     public function render($widget)
     {
         return $this->container->get('victoire_templating')->render(
-            "VictoireButtonBundle:button/show.html.twig",
+            "VictoireButtonBundle::show.html.twig",
             array(
                 "widget" => $widget
             )
@@ -60,9 +60,8 @@ protected $container;
      */
     public function renderForm($form, $widget, $entity = null)
     {
-
         return $this->container->get('victoire_templating')->render(
-            "VictoireButtonBundle:button/edit.html.twig",
+            "VictoireButtonBundle::edit.html.twig",
             array(
                 "widget" => $widget,
                 'form'   => $form->createView(),
@@ -100,10 +99,10 @@ protected $container;
     {
 
         return $this->container->get('victoire_templating')->render(
-            "VictoireButtonBundle:button/new.html.twig",
+            "VictoireButtonBundle::new.html.twig",
             array(
                 "widget"          => $widget,
-                'form'            => $form->createView(),
+                "form"            => $form->createView(),
                 "slot"            => $slot,
                 "entity"          => $entity,
                 "renderContainer" => true,
