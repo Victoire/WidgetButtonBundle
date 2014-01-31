@@ -1,4 +1,4 @@
-Victoire CMS Button Bundle
+Victoire CMS Button Widget Bundle
 ============
 
 Need to add a button in a victoire cms website ?
@@ -7,7 +7,7 @@ Get this button bundle and so on
 First you need to have a valid Symfony2 Victoire edition.
 Then you just have to run the following composer command :
 
-    php composer.phar require victoire/button-bundle
+    php composer.phar require victoire/button-widget
 
 The button bundle handles Bootstrap and Foundation view.
 
