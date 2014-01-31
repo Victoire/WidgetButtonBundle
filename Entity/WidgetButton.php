@@ -1,5 +1,5 @@
 <?php
-namespace Victoire\ButtonBundle\Entity;
+namespace Victoire\Widget\ButtonBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\CmsBundle\Entity\Widget;

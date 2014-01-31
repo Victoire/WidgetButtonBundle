@@ -1,6 +1,6 @@
 <?php
 
-namespace Victoire\ButtonBundle\Form;
+namespace Victoire\Widget\ButtonBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -74,7 +74,7 @@ class WidgetButtonType extends WidgetType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class'         => 'Victoire\ButtonBundle\Entity\WidgetButton',
+            'data_class'         => 'Victoire\Widget\ButtonBundle\Entity\WidgetButton',
             'widget'             => 'button',
             'translation_domain' => 'victoire'
         ));

@@ -1,5 +1,5 @@
 victoire_cms:
     widgets:
         button:
-            class: "Victoire\\ButtonBundle\\Entity\\WidgetButton"
+            class: "Victoire\\Widget\\ButtonBundle\\Entity\\WidgetButton"
             name: button
