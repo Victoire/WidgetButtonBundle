@@ -1,10 +1,10 @@
 <?php
 
-namespace Victoire\ButtonBundle\Widget\Manager;
+namespace Victoire\Widget\ButtonBundle\Widget\Manager;
 
 
-use Victoire\ButtonBundle\Form\WidgetButtonType;
-use Victoire\ButtonBundle\Entity\WidgetButton;
+use Victoire\Widget\ButtonBundle\Form\WidgetButtonType;
+use Victoire\Widget\ButtonBundle\Entity\WidgetButton;
 
 class WidgetButtonManager
 {
@@ -44,7 +44,7 @@ protected $container;
     public function render($widget)
     {
         return $this->container->get('victoire_templating')->render(
-            "VictoireButtonBundle::show.html.twig",
+            "VictoireWidgetButtonBundle::show.html.twig",
             array(
                 "widget" => $widget
             )
@@ -61,7 +61,7 @@ protected $container;
     public function renderForm($form, $widget, $entity = null)
     {
         return $this->container->get('victoire_templating')->render(
-            "VictoireButtonBundle::edit.html.twig",
+            "VictoireWidgetButtonBundle::edit.html.twig",
             array(
                 "widget" => $widget,
                 'form'   => $form->createView(),
@@ -99,7 +99,7 @@ protected $container;
     {
 
         return $this->container->get('victoire_templating')->render(
-            "VictoireButtonBundle::new.html.twig",
+            "VictoireWidgetButtonBundle::new.html.twig",
             array(
                 "widget"          => $widget,
                 "form"            => $form->createView(),

@@ -20,9 +20,9 @@ Do not forget to add the bundle in your AppKernel !
         {
             $bundles = array(
                 ...
-                new Victoire\ButtonBundle\VictoireButtonBundle(),
+                new Victoire\Widget\ButtonBundle\VictoireWidgetButtonBundle(),
             );
-    
+
             return $bundles;
         }
     }
