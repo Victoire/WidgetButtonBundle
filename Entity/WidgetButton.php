@@ -19,28 +19,28 @@ class WidgetButton extends Widget
      *
      * @ORM\Column(name="title", type="string", length=55)
      */
-    private $title;
+    protected $title;
 
     /**
      * @var string
      *
      * @ORM\Column(name="hoverTitle", type="string", length=55)
      */
-    private $hoverTitle;
+    protected $hoverTitle;
 
     /**
      * @var string
      *
      * @ORM\Column(name="link", type="string", length=255)
      */
-    private $link;
+    protected $link;
 
     /**
      * @var string
      *
      * @ORM\Column(name="target", type="string", length=10)
      */
-    private $target;
+    protected $target;
 
     /**
      * @var string tiny|small|default|large
@@ -48,14 +48,14 @@ class WidgetButton extends Widget
      *
      * @ORM\Column(name="size", type="string", length=10)
      */
-    private $size;
+    protected $size;
 
     /**
      * @var string default|warning|info|success|primary|danger
      *
      * @ORM\Column(name="style", type="string", length=10)
      */
-    private $style;
+    protected $style;
 
     /**
      * Set title
