@@ -2,7 +2,7 @@
 namespace Victoire\Widget\ButtonBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Victoire\CmsBundle\Entity\Widget;
+use Victoire\Bundle\CoreBundle\Entity\Widget;
 
 /**
  * WidgetButton
@@ -12,7 +12,7 @@ use Victoire\CmsBundle\Entity\Widget;
  */
 class WidgetButton extends Widget
 {
-    use \Victoire\CmsBundle\Entity\Traits\WidgetTrait;
+    use \Victoire\Bundle\CoreBundle\Entity\Traits\WidgetTrait;
 
     /**
      * @var string

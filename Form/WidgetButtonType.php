@@ -5,8 +5,8 @@ namespace Victoire\Widget\ButtonBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-use Victoire\CmsBundle\Form\EntityProxyFormType;
-use Victoire\CmsBundle\Form\WidgetType;
+use Victoire\Bundle\CoreBundle\Form\EntityProxyFormType;
+use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
 
 /**
@@ -86,6 +86,6 @@ class WidgetButtonType extends WidgetType
      */
     public function getName()
     {
-        return 'appventus_victoirecmsbundle_widgetbuttontype';
+        return 'appventus_victoireCoreBundle_widgetbuttontype';
     }
 }
