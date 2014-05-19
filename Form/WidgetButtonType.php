@@ -33,15 +33,19 @@ class WidgetButtonType extends WidgetType
                     'label'   => 'widget.button.form.label.hoverTitle'))
                 ->add('link', null, array(
                     'label'   => 'widget.button.form.label.link'))
-                ->add('target', null, array(
-                    'label'   => 'widget.button.form.label.target'))
+                ->add('target', 'choice', array(
+                    'label'   => 'widget.button.form.label.target',
+                    'choices' => array(
+                        '_parent' => 'widget.button.form.choice.target.parent',
+                        '_blank'  => 'widget.button.form.choice.target.blank',
+                    ),
+                    'required'  => true))
                 ->add('size', 'choice', array(
                     'label'   => 'widget.button.form.label.size',
                     'choices' => array(
-                        'tiny'    => 'widget.button.form.choice.size.tiny',
-                        'small'   => 'widget.button.form.choice.size.small',
-                        'default' => 'widget.button.form.choice.size.default',
-                        'large'   => 'widget.button.form.choice.size.large'
+                        'normal' => 'widget.button.form.choice.size.normal',
+                        'tiny'   => 'widget.button.form.choice.size.tiny',
+                        'large'  => 'widget.button.form.choice.size.large'
                     ),
                     'required'  => true,
                 ))
@@ -52,7 +56,6 @@ class WidgetButtonType extends WidgetType
                         'success' => 'widget.button.form.choice.style.label.success',
                         'info'    => 'widget.button.form.choice.style.label.info',
                         'warning' => 'widget.button.form.choice.style.label.warning',
-                        'default' => 'widget.button.form.choice.style.label.default',
                         'danger'  => 'widget.button.form.choice.style.label.danger'
                     ),
                     'required'  => true,
