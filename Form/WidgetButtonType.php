@@ -86,6 +86,6 @@ class WidgetButtonType extends WidgetType
      */
     public function getName()
     {
-        return 'appventus_victoireCoreBundle_widgetbuttontype';
+        return 'appventus_victoirecorebundle_widgetbuttontype';
     }
 }
