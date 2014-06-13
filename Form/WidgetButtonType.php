@@ -14,16 +14,27 @@ use Victoire\Bundle\CoreBundle\Form\WidgetType;
  */
 class WidgetButtonType extends WidgetType
 {
-
     /**
      * define form fields
+     *
      * @param FormBuilderInterface $builder
      * @param array $options
+     *
+     * @throws \Exception
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+        $namespace = $options['namespace'];
+        $entityName = $options['entityName'];
+
+        if ($entityName !== null) {
+            if ($namespace === null) {
+                throw new \Exception('The namespace is mandatory if the entity_name is given.');
+            }
+        }
+
         //choose form mode
-        if ($this->entity_name === null) {
+        if ($entityName === null) {
             //if no entity is given, we generate the static form
             $builder
                 ->add('title', null, array(
@@ -60,15 +71,10 @@ class WidgetButtonType extends WidgetType
                     ),
                     'required'  => true,
                 ));
-
-        } else {
-            //else, WidgetType class will embed a EntityProxyType for given entity
-            parent::buildForm($builder, $options);
         }
 
-
+        parent::buildForm($builder, $options);
     }
-
 
     /**
      * bind form to WidgetButton entity
@@ -76,6 +82,8 @@ class WidgetButtonType extends WidgetType
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
+        parent::setDefaultOptions($resolver);
+
         $resolver->setDefaults(array(
             'data_class'         => 'Victoire\Widget\ButtonBundle\Entity\WidgetButton',
             'widget'             => 'button',
@@ -83,12 +91,13 @@ class WidgetButtonType extends WidgetType
         ));
     }
 
-
     /**
      * get form name
+     *
+     * @return string
      */
     public function getName()
     {
-        return 'appventus_victoirecorebundle_widgetbuttontype';
+        return 'victoire_widget_form_button';
     }
 }
