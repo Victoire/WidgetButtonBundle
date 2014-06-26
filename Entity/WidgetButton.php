@@ -12,8 +12,6 @@ use Victoire\Bundle\CoreBundle\Entity\Widget;
  */
 class WidgetButton extends Widget
 {
-    use \Victoire\Bundle\CoreBundle\Entity\Traits\WidgetTrait;
-
     /**
      * @var string
      *
@@ -61,6 +59,8 @@ class WidgetButton extends Widget
      * Set title
      *
      * @param string $title
+     *
+     * @return WidgetButton
      */
     public function setTitle($title)
     {
@@ -83,6 +83,8 @@ class WidgetButton extends Widget
      * Set hoverTitle
      *
      * @param string $hoverTitle
+     *
+     * @return WidgetButton
      */
     public function setHoverTitle($hoverTitle)
     {
@@ -105,6 +107,8 @@ class WidgetButton extends Widget
      * Set link
      *
      * @param string $link
+     *
+     * @return WidgetButton
      */
     public function setLink($link)
     {
@@ -127,6 +131,8 @@ class WidgetButton extends Widget
      * Set target
      *
      * @param string $target
+     *
+     * @return WidgetButton
      */
     public function setTarget($target)
     {
@@ -149,6 +155,8 @@ class WidgetButton extends Widget
      * Set style
      *
      * @param string $style
+     *
+     * @return WidgetButton
      */
     public function setStyle($style)
     {
@@ -171,6 +179,8 @@ class WidgetButton extends Widget
      * Set size
      *
      * @param string $size
+     *
+     * @return WidgetButton
      */
     public function setSize($size)
     {
