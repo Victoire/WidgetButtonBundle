@@ -3,6 +3,7 @@ services:
         class: Victoire\Widget\ButtonBundle\Widget\Manager\WidgetButtonManager
         arguments: 
             - "@service_container"
+            - "Button"
 
     widget_button_manager:
         alias: victoire_core.twig.widget_button_manager
