@@ -1,1 +1,9 @@
 {% extends 'VictoireCoreBundle:Widget:edit.html.twig' %}
+
+{% block body %}
+{{ parent() }}
+
+{% javascripts '@VictoireWidgetButtonBundle/Resources/public/js/button.js' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% endblock %}

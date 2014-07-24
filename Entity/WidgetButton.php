@@ -29,7 +29,7 @@ class WidgetButton extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="link", type="string", length=255)
+     * @ORM\Column(name="link", type="string", length=255, nullable=true)
      */
     protected $link;
 
@@ -54,6 +54,19 @@ class WidgetButton extends Widget
      * @ORM\Column(name="style", type="string", length=10)
      */
     protected $style;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Victoire\Bundle\PageBundle\Entity\Page")
+     * @ORM\JoinColumn(name="attached_page_id", referencedColumnName="id", onDelete="cascade", nullable=true)
+     */
+    protected $page;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="link_type", type="string", length=255)
+     */
+    protected $linkType;
 
     /**
      * Set title
@@ -199,4 +212,49 @@ class WidgetButton extends Widget
         return $this->size;
     }
 
+    /**
+     * Set page
+     *
+     * @param \Victoire\Bundle\PageBundle\Entity\Page $page
+     * @return WidgetButton
+     */
+    public function setPage($page = null)
+    {
+        $this->page = $page;
+
+        return $this;
+    }
+
+    /**
+     * Get page
+     *
+     * @return \Victoire\Bundle\PageBundle\Entity\Page 
+     */
+    public function getPage()
+    {
+        return $this->page;
+    }
+
+    /**
+     * Set linkType
+     *
+     * @param string $linkType
+     * @return MenuItem
+     */
+    public function setlinkType($linkType)
+    {
+        $this->linkType = $linkType;
+
+        return $this;
+    }
+
+    /**
+     * Get linkType
+     *
+     * @return string
+     */
+    public function getlinkType()
+    {
+        return $this->linkType;
+    }
 }

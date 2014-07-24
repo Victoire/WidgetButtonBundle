@@ -1,7 +1,11 @@
 {% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
-<a href="{{widget.link}}" target="{{ widget.target|default('_parent') }}" title="{{widget.hoverTitle}}" class="vic-btn vic-btn-{{ widget.size }} vic-btn-{{ widget.style }}">
+{% if widget.linkType == 'page' %}
+<a href="{{ path('victoire_core_page_show', {'url' : widget.page.url }) }}" target="{{ widget.target|default('_parent') }}" title="{{widget.hoverTitle}}" class="btn btn-{{ widget.size }} btn-{{ widget.style }}">
+{% else %}
+    <a href="{{widget.link}}" target="{{ widget.target|default('_parent') }}" title="{{widget.hoverTitle}}" class="btn btn-{{ widget.size }} btn-{{ widget.style }}">
+{% endif %}
     {{widget.title}}
 </a>
 {% endblock content %}

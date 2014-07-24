@@ -42,8 +42,28 @@ class WidgetButtonType extends WidgetType
                 ))
                 ->add('hoverTitle', null, array(
                     'label'   => 'widget.button.form.label.hoverTitle'))
+                ->add('linkType', 'choice', array(
+                    'label'       => 'menu.form.link_type.label',
+                    'required'    => true,
+                    'choices'     => array(
+                        'page'  => 'menu.form.link_type.page',
+                        'url'   => 'menu.form.link_type.url'
+                    ),
+                    'attr'        => array(
+                        'class' => 'item-type',
+                        'onchange' => 'trackChange(this);'
+                    )
+                ))
                 ->add('link', null, array(
-                    'label'   => 'widget.button.form.label.link'))
+                    'label' => 'widget.button.form.label.link'))
+                ->add('page', 'entity', array(
+                    'label'       => 'menu.form.page.label',
+                    'required'    => false,
+                    'empty_value' => 'menu.form.page.blank',
+                    'class'       => 'VictoirePageBundle:Page',
+                    'property'    => 'title',
+                    'attr'        => array('class' => 'page-type'),
+                ))
                 ->add('target', 'choice', array(
                     'label'   => 'widget.button.form.label.target',
                     'choices' => array(
