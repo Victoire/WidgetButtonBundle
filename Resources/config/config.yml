@@ -1,5 +1,5 @@
 victoire_core:
     widgets:
-        button:
+        Button:
             class: "Victoire\\Widget\\ButtonBundle\\Entity\\WidgetButton"
-            name: button
+            name: Button
