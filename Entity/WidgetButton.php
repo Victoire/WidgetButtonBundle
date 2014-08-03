@@ -7,7 +7,7 @@ use Victoire\Bundle\CoreBundle\Entity\Widget;
 /**
  * WidgetButton
  *
- * @ORM\Table("cms_widget_button")
+ * @ORM\Table("vic_widget_button")
  * @ORM\Entity
  */
 class WidgetButton extends Widget
@@ -214,8 +214,8 @@ class WidgetButton extends Widget
 
     /**
      * Set page
-     *
      * @param \Victoire\Bundle\PageBundle\Entity\Page $page
+     *
      * @return WidgetButton
      */
     public function setPage($page = null)
@@ -228,7 +228,7 @@ class WidgetButton extends Widget
     /**
      * Get page
      *
-     * @return \Victoire\Bundle\PageBundle\Entity\Page 
+     * @return \Victoire\Bundle\PageBundle\Entity\Page
      */
     public function getPage()
     {
@@ -238,7 +238,7 @@ class WidgetButton extends Widget
     /**
      * Set linkType
      *
-     * @param string $linkType
+     * @param  string   $linkType
      * @return MenuItem
      */
     public function setlinkType($linkType)
