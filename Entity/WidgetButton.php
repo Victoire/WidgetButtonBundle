@@ -2,7 +2,7 @@
 namespace Victoire\Widget\ButtonBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Victoire\Bundle\CoreBundle\Entity\Widget;
+use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
  * WidgetButton
@@ -215,7 +215,7 @@ class WidgetButton extends Widget
     /**
      * Set page
      *
-     * @param \Victoire\Bundle\PageBundle\Entity\Page $page
+     * @param  \Victoire\Bundle\PageBundle\Entity\Page $page
      * @return WidgetButton
      */
     public function setPage($page = null)
@@ -228,7 +228,7 @@ class WidgetButton extends Widget
     /**
      * Get page
      *
-     * @return \Victoire\Bundle\PageBundle\Entity\Page 
+     * @return \Victoire\Bundle\PageBundle\Entity\Page
      */
     public function getPage()
     {
@@ -238,7 +238,7 @@ class WidgetButton extends Widget
     /**
      * Set linkType
      *
-     * @param string $linkType
+     * @param  string   $linkType
      * @return MenuItem
      */
     public function setlinkType($linkType)
