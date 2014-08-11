@@ -1,21 +1,22 @@
 {
-    "name": "victoire/button-widget",
-    "type": "symfony-bundle",
+    "name"       : "victoire/button-widget",
+    "type"       : "symfony-bundle",
     "description": "Victoire Cms Button component",
-    "keywords": ["cms", "victoire", "button"],
-    "homepage": "http://appventus.com",
-    "license": "MIT",
-    "authors": [
+    "keywords"   : ["cms", "victoire", "button"],
+    "homepage"   : "http://appventus.com",
+    "license"    : "MIT",
+    "authors"    : [
         {
-            "name": "Leny Bernard",
+            "name" : "Leny Bernard",
             "email": "leny@appventus.com"
         }
     ],
     "require": {
-        "php"                                 : ">=5.3.3",
-        "symfony/framework-bundle"            : "~2.3",
-        "victoire/victoire"                   : ">=0.1.4"
-    },    
+        "php"                      : ">=5.3.3",
+        "symfony/framework-bundle" : "~2.3",
+        "victoire/render-widget"   : "dev-master",
+        "victoire/victoire"        : ">=0.1.4"
+    },
     "autoload": {
         "psr-0": { "Victoire\\Widget\\ButtonBundle": "" }
     },

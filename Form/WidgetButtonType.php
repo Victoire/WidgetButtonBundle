@@ -2,12 +2,10 @@
 
 namespace Victoire\Widget\ButtonBundle\Form;
 
-use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
-use Victoire\Bundle\CoreBundle\Form\EntityProxyFormType;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
-
+use Victoire\Widget\RenderBundle\DataTransformer\JsonToArrayTransformer;
 
 /**
  * WidgetButton form type
@@ -35,6 +33,7 @@ class WidgetButtonType extends WidgetType
 
         //choose form mode
         if ($entityName === null) {
+            $transformer = new JsonToArrayTransformer();
             //if no entity is given, we generate the static form
             $builder
                 ->add('title', null, array(
@@ -47,28 +46,41 @@ class WidgetButtonType extends WidgetType
                     'required'    => true,
                     'choices'     => array(
                         'page'  => 'menu.form.link_type.page',
+                        'route' => 'widget.button.form.link_type.route',
                         'url'   => 'menu.form.link_type.url'
                     ),
                     'attr'        => array(
-                        'class' => 'item-type',
-                        'onchange' => 'trackChange(this);'
+                        'class'    => 'item-type',
+                        'onchange' => 'trackButtonTypeChange(this);'
                     )
                 ))
                 ->add('link', null, array(
-                    'label' => 'widget.button.form.label.link'))
+                    'label' => 'widget.button.form.label.link',
+                    'attr'  => array('class' => 'url-type')
+                ))
                 ->add('page', 'entity', array(
                     'label'       => 'menu.form.page.label',
                     'required'    => false,
                     'empty_value' => 'menu.form.page.blank',
                     'class'       => 'VictoirePageBundle:Page',
-                    'property'    => 'title',
+                    'property'    => 'name',
                     'attr'        => array('class' => 'page-type'),
                 ))
+                ->add('route', null, array(
+                    'label' => 'widget.button.form.label.route',
+                    'attr'  => array('class' => 'route-type')
+                ))
+                ->add($builder->create('route_parameters', 'text', array(
+                    'label'      => 'widget.button.form.label.route_parameters',
+                    'attr'       => array('class' => 'route-type')
+                    )
+                )->addModelTransformer($transformer))
                 ->add('target', 'choice', array(
                     'label'   => 'widget.button.form.label.target',
                     'choices' => array(
                         '_parent' => 'widget.button.form.choice.target.parent',
                         '_blank'  => 'widget.button.form.choice.target.blank',
+                        'ajax-modal'  => 'widget.button.form.choice.target.ajax-modal',
                     ),
                     'required'  => true))
                 ->add('size', 'choice', array(

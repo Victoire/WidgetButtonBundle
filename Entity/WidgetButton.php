@@ -64,6 +64,20 @@ class WidgetButton extends Widget
     /**
      * @var string
      *
+     * @ORM\Column(name="route", type="string", length=55)
+     */
+    protected $route;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="route_parameters", type="array")
+     */
+    protected $routeParameters = array();
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="link_type", type="string", length=255)
      */
     protected $linkType;
@@ -210,6 +224,54 @@ class WidgetButton extends Widget
     public function getSize()
     {
         return $this->size;
+    }
+
+    /**
+     * Set route
+     *
+     * @param string $route
+     *
+     * @return WidgetButton
+     */
+    public function setRoute($route)
+    {
+        $this->route = $route;
+
+        return $this;
+    }
+
+    /**
+     * Get route
+     *
+     * @return string
+     */
+    public function getRoute()
+    {
+        return $this->route;
+    }
+
+    /**
+     * Set routeParameters
+     *
+     * @param array $routeParameters
+     *
+     * @return WidgetButton
+     */
+    public function setRouteParameters($routeParameters)
+    {
+        $this->routeParameters = $routeParameters;
+
+        return $this;
+    }
+
+    /**
+     * Get routeParameters
+     *
+     * @return array
+     */
+    public function getRouteParameters()
+    {
+        return $this->routeParameters;
     }
 
     /**

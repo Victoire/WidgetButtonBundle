@@ -91,6 +91,22 @@
         <source>widget.button.form.choice.target.blank</source>
         <target>Onglet</target>
       </trans-unit>
+      <trans-unit resname="widget.button.form.choice.target.ajax-modal">
+        <source>widget.button.form.choice.target.ajax-modal</source>
+        <target>Fenêtre modale</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.link_type.route">
+        <source>widget.button.form.link_type.route</source>
+        <target>Route</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.label.route">
+        <source>widget.button.form.label.route</source>
+        <target>Nom de la route</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.label.route_parameters">
+        <source>widget.button.form.label.route_parameters</source>
+        <target>Paramètres de la route</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

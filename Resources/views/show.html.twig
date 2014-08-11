@@ -1,11 +1,20 @@
 {% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
-{% if widget.linkType == 'page' %}
-<a href="{{ path('victoire_core_page_show', {'url' : widget.page.url }) }}" target="{{ widget.target|default('_parent') }}" title="{{widget.hoverTitle}}" class="btn btn-{{ widget.size }} btn-{{ widget.style }}">
+
+{% if target == "ajax-modal" %}
+{% set targetTag = 'data-toggle=' ~ target %}
 {% else %}
-    <a href="{{widget.link}}" target="{{ widget.target|default('_parent') }}" title="{{widget.hoverTitle}}" class="btn btn-{{ widget.size }} btn-{{ widget.style }}">
+{% set targetTag = 'target="' ~ target|default('_parent') ~ '"' %}
 {% endif %}
-    {{widget.title}}
+
+{% if linkType == 'page' %}
+<a href="{{ path('victoire_core_page_show', {'url' : page.url }) }}" {{ targetTag }} title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
+{% elseif linkType == 'url'  %}
+    <a href="{{link}}" {{ targetTag }} title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
+{% elseif linkType == 'route'  %}
+    <a href="{{ path(route, routeParameters)}}" {{ targetTag }} title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
+{% endif %}
+    {{ title|raw }}
 </a>
 {% endblock content %}
