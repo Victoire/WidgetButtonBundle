@@ -64,14 +64,14 @@ class WidgetButton extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="route", type="string", length=55)
+     * @ORM\Column(name="route", type="string", length=55, nullable=true)
      */
     protected $route;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="route_parameters", type="array")
+     * @ORM\Column(name="route_parameters", type="array", nullable=true)
      */
     protected $routeParameters = array();
 

@@ -36,7 +36,7 @@ class WidgetButtonType extends WidgetType
             $transformer = new JsonToArrayTransformer();
             //if no entity is given, we generate the static form
             $builder
-                ->add('title', null, array(
+                ->add('title', 'textarea', array(
                     'label'      => 'widget.button.form.label.title'
                 ))
                 ->add('hoverTitle', null, array(
