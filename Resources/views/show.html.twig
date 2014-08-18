@@ -2,19 +2,14 @@
 
 {% block content %}
 
-{% if target == "ajax-modal" %}
-{% set targetTag = 'data-toggle=' ~ target %}
-{% else %}
-{% set targetTag = 'target="' ~ target|default('_parent') ~ '"' %}
-{% endif %}
+{% set targetTag = target == "ajax-modal" ? 'data-toggle=' ~ target : 'target="' ~ target|default('_parent') ~ '"' %}
 
 {% if linkType == 'page' %}
-<a href="{{ path('victoire_core_page_show', {'url' : page.url }) }}" {{ targetTag }} title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
-{% elseif linkType == 'url'  %}
-    <a href="{{link}}" {{ targetTag }} title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
+    {% set link = path('victoire_core_page_show', {'url' : page.url }) %}
 {% elseif linkType == 'route'  %}
-    <a href="{{ path(route, routeParameters)}}" {{ targetTag }} title="{{hoverTitle}}" class="btn btn-{{ size }} btn-{{ style }}">
+    {% set link = path(route, routeParameters) %}
 {% endif %}
-    {{ title|raw }}
-</a>
+    <a href="{{ link }}" {{ targetTag }} title="{{ hoverTitle }}" class="btn btn-{{ size }} btn-{{ style }}">
+        {{ title|nl2br|raw }}
+    </a>
 {% endblock content %}
