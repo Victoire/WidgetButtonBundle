@@ -1,6 +1,6 @@
 services:
     victoire_core.widget_button_content_resolver:
-        class: Victoire\Bundle\WidgetBundle\Resolver\BaseWidgetContentResolver
+        class: Victoire\Widget\ButtonBundle\Resolver\WidgetButtonContentResolver
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Button }
     #alias to the entity

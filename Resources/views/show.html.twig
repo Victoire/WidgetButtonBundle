@@ -10,6 +10,6 @@
     {% set link = path(route, routeParameters) %}
 {% endif %}
     <a href="{{ link }}" {{ targetTag }} title="{{ hoverTitle }}" class="btn btn-{{ size }} btn-{{ style }}">
-        {{ title|nl2br|raw }}
+        {{ title|raw|nl2br }}
     </a>
 {% endblock content %}
