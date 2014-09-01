@@ -107,6 +107,70 @@
         <source>widget.button.form.label.route_parameters</source>
         <target>Paramètres de la route</target>
       </trans-unit>
+      <trans-unit resname="menu.form.link_type.widget">
+        <source>menu.form.link_type.widget</source>
+        <target>Ancre (Widget)</target>
+      </trans-unit>
+      <trans-unit resname="menu.form.attachedWidget.label">
+        <source>menu.form.attachedWidget.label</source>
+        <target>Cible de l'ancre (Widget)</target>
+      </trans-unit>
+      <trans-unit resname="menu.form.attachedWidget.label">
+        <source>menu.form.attachedWidget.label</source>
+        <target>Ancre (Widget)</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.label.route_parameters">
+        <source>widget.button.form.label.route_parameters</source>
+        <target>Paramètres de la route</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.label.target">
+        <source>widget.button.form.label.target</source>
+        <target>Comportement du lien</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.label.size">
+        <source>widget.button.form.label.size</source>
+        <target>Taille du bouton</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.choice.size.normal">
+        <source>widget.button.form.choice.size.normal</source>
+        <target>Normale</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.choice.size.tiny">
+        <source>widget.button.form.choice.size.tiny</source>
+        <target>Petit</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.choice.size.large">
+        <source>widget.button.form.choice.size.large</source>
+        <target>Large</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.label.style">
+        <source>widget.button.form.label.style</source>
+        <target>Style du bouton</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.choice.style.label.link">
+        <source>widget.button.form.choice.style.label.link</source>
+        <target>Lien</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.choice.style.label.primary">
+        <source>widget.button.form.choice.style.label.primary</source>
+        <target>Principal</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.choice.style.label.success">
+        <source>widget.button.form.choice.style.label.success</source>
+        <target>Succes</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.choice.style.label.info">
+        <source>widget.button.form.choice.style.label.info</source>
+        <target>Informatif</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.choice.style.label.warning">
+        <source>widget.button.form.choice.style.label.warning</source>
+        <target>Avertissement</target>
+      </trans-unit>
+      <trans-unit resname="widget.button.form.choice.style.label.danger">
+        <source>widget.button.form.choice.style.label.danger</source>
+        <target>Danger</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
