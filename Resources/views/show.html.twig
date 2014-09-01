@@ -2,12 +2,14 @@
 
 {% block content %}
 
-{% set targetTag = target == "ajax-modal" ? 'data-toggle=' ~ target : 'target="' ~ target|default('_parent') ~ '"' %}
+{% set targetTag = target == "ajax-modal" ? 'data-toggle=' ~ target : 'target=' ~ target|default('_parent') %}
 
 {% if linkType == 'page' %}
     {% set link = path('victoire_core_page_show', {'url' : page.url }) %}
 {% elseif linkType == 'route'  %}
     {% set link = path(route, routeParameters) %}
+{% elseif linkType == 'widget'  %}
+    {% set link = path('victoire_core_page_show', {'url' : attachedWidget.view.url }) ~ "#vic-widget-" ~ attachedWidget.id ~ "-container" %}
 {% endif %}
     <a href="{{ link }}" {{ targetTag }} title="{{ hoverTitle }}" class="btn btn-{{ size }} btn-{{ style }}">
         {{ title|raw|nl2br }}

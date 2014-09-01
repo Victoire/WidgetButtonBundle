@@ -62,6 +62,12 @@ class WidgetButton extends Widget
     protected $page;
 
     /**
+     * @ORM\ManyToOne(targetEntity="Victoire\Bundle\WidgetBundle\Entity\Widget")
+     * @ORM\JoinColumn(name="attached_widget_id", referencedColumnName="id", onDelete="cascade", nullable=true)
+     */
+    protected $attachedWidget;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="route", type="string", length=55, nullable=true)
@@ -319,4 +325,26 @@ class WidgetButton extends Widget
     {
         return $this->linkType;
     }
+/**
+ * Get attachedWidget
+ *
+ * @return string
+ */
+public function getAttachedWidget()
+{
+    return $this->attachedWidget;
+}
+
+/**
+ * Set attachedWidget
+ *
+ * @param string $attachedWidget
+ * @return $this
+ */
+public function setAttachedWidget($attachedWidget)
+{
+    $this->attachedWidget = $attachedWidget;
+
+    return $this;
+}
 }

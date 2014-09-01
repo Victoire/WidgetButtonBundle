@@ -45,7 +45,8 @@ class WidgetButtonType extends WidgetType
                 'choices'     => array(
                     'page'  => 'menu.form.link_type.page',
                     'route' => 'widget.button.form.link_type.route',
-                    'url'   => 'menu.form.link_type.url'
+                    'url'   => 'menu.form.link_type.url',
+                    'widget'   => 'menu.form.link_type.widget'
                 ),
                 'attr'        => array(
                     'class'    => 'item-type',
@@ -63,6 +64,12 @@ class WidgetButtonType extends WidgetType
                 'class'       => 'VictoirePageBundle:Page',
                 'property'    => 'name',
                 'attr'        => array('class' => 'page-type'),
+            ))
+            ->add('attachedWidget', 'entity', array(
+                'label'       => 'menu.form.attachedWidget.label',
+                'required'    => false,
+                'empty_value' => 'menu.form.attachedWidget.blank',
+                'class'       => 'VictoireWidgetBundle:Widget',
             ))
             ->add('route', null, array(
                 'label' => 'widget.button.form.label.route',
@@ -97,7 +104,8 @@ class WidgetButtonType extends WidgetType
                     'success' => 'widget.button.form.choice.style.label.success',
                     'info'    => 'widget.button.form.choice.style.label.info',
                     'warning' => 'widget.button.form.choice.style.label.warning',
-                    'danger'  => 'widget.button.form.choice.style.label.danger'
+                    'danger'  => 'widget.button.form.choice.style.label.danger',
+                    'link'    => 'widget.button.form.choice.style.label.link'
                 ),
                 'required'  => true,
             ));
