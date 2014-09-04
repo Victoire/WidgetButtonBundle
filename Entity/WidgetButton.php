@@ -12,6 +12,7 @@ use Victoire\Bundle\WidgetBundle\Entity\Widget;
  */
 class WidgetButton extends Widget
 {
+    use \Victoire\Bundle\WidgetBundle\Entity\Traits\LinkTrait;
     /**
      * @var string
      *
@@ -27,20 +28,6 @@ class WidgetButton extends Widget
     protected $hoverTitle;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="link", type="string", length=255, nullable=true)
-     */
-    protected $link;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="target", type="string", length=10)
-     */
-    protected $target;
-
-    /**
      * @var string tiny|small|default|large
      *
      *
@@ -54,39 +41,6 @@ class WidgetButton extends Widget
      * @ORM\Column(name="style", type="string", length=10)
      */
     protected $style;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="Victoire\Bundle\PageBundle\Entity\Page")
-     * @ORM\JoinColumn(name="attached_page_id", referencedColumnName="id", onDelete="cascade", nullable=true)
-     */
-    protected $page;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="Victoire\Bundle\WidgetBundle\Entity\Widget")
-     * @ORM\JoinColumn(name="attached_widget_id", referencedColumnName="id", onDelete="cascade", nullable=true)
-     */
-    protected $attachedWidget;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="route", type="string", length=55, nullable=true)
-     */
-    protected $route;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="route_parameters", type="array", nullable=true)
-     */
-    protected $routeParameters = array();
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="link_type", type="string", length=255)
-     */
-    protected $linkType;
 
     /**
      * Set title
@@ -137,54 +91,6 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Set link
-     *
-     * @param string $link
-     *
-     * @return WidgetButton
-     */
-    public function setLink($link)
-    {
-        $this->link = $link;
-
-        return $this;
-    }
-
-    /**
-     * Get link
-     *
-     * @return string
-     */
-    public function getLink()
-    {
-        return $this->link;
-    }
-
-    /**
-     * Set target
-     *
-     * @param string $target
-     *
-     * @return WidgetButton
-     */
-    public function setTarget($target)
-    {
-        $this->target = $target;
-
-        return $this;
-    }
-
-    /**
-     * Get target
-     *
-     * @return string
-     */
-    public function getTarget()
-    {
-        return $this->target;
-    }
-
-    /**
      * Set style
      *
      * @param string $style
@@ -232,119 +138,4 @@ class WidgetButton extends Widget
         return $this->size;
     }
 
-    /**
-     * Set route
-     *
-     * @param string $route
-     *
-     * @return WidgetButton
-     */
-    public function setRoute($route)
-    {
-        $this->route = $route;
-
-        return $this;
-    }
-
-    /**
-     * Get route
-     *
-     * @return string
-     */
-    public function getRoute()
-    {
-        return $this->route;
-    }
-
-    /**
-     * Set routeParameters
-     *
-     * @param array $routeParameters
-     *
-     * @return WidgetButton
-     */
-    public function setRouteParameters($routeParameters)
-    {
-        $this->routeParameters = $routeParameters;
-
-        return $this;
-    }
-
-    /**
-     * Get routeParameters
-     *
-     * @return array
-     */
-    public function getRouteParameters()
-    {
-        return $this->routeParameters;
-    }
-
-    /**
-     * Set page
-     * @param \Victoire\Bundle\PageBundle\Entity\Page $page
-     *
-     * @return WidgetButton
-     */
-    public function setPage($page = null)
-    {
-        $this->page = $page;
-
-        return $this;
-    }
-
-    /**
-     * Get page
-     *
-     * @return \Victoire\Bundle\PageBundle\Entity\Page
-     */
-    public function getPage()
-    {
-        return $this->page;
-    }
-
-    /**
-     * Set linkType
-     *
-     * @param  string   $linkType
-     * @return MenuItem
-     */
-    public function setlinkType($linkType)
-    {
-        $this->linkType = $linkType;
-
-        return $this;
-    }
-
-    /**
-     * Get linkType
-     *
-     * @return string
-     */
-    public function getlinkType()
-    {
-        return $this->linkType;
-    }
-/**
- * Get attachedWidget
- *
- * @return string
- */
-public function getAttachedWidget()
-{
-    return $this->attachedWidget;
-}
-
-/**
- * Set attachedWidget
- *
- * @param string $attachedWidget
- * @return $this
- */
-public function setAttachedWidget($attachedWidget)
-{
-    $this->attachedWidget = $attachedWidget;
-
-    return $this;
-}
 }

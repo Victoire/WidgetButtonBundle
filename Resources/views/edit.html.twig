@@ -3,7 +3,7 @@
 {% block body %}
 {{ parent() }}
 
-{% javascripts '@VictoireWidgetButtonBundle/Resources/public/js/button.js' %}
-    <script type="text/javascript" src="{{ asset_url }}"></script>
-{% endjavascripts %}
+<script type="text/javascript">
+    showSelectedLinkType($vic('.linkType-select'))
+</script>
 {% endblock %}

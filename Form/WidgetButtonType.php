@@ -5,7 +5,6 @@ namespace Victoire\Widget\ButtonBundle\Form;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
-use Victoire\Widget\RenderBundle\DataTransformer\JsonToArrayTransformer;
 
 /**
  * WidgetButton form type
@@ -31,7 +30,6 @@ class WidgetButtonType extends WidgetType
             }
         }
 
-        $transformer = new JsonToArrayTransformer();
         //if no entity is given, we generate the static form
         $builder
             ->add('title', 'textarea', array(
@@ -39,55 +37,7 @@ class WidgetButtonType extends WidgetType
             ))
             ->add('hoverTitle', null, array(
                 'label'   => 'widget.button.form.label.hoverTitle'))
-            ->add('linkType', 'choice', array(
-                'label'       => 'menu.form.link_type.label',
-                'required'    => true,
-                'choices'     => array(
-                    'page'  => 'menu.form.link_type.page',
-                    'route' => 'widget.button.form.link_type.route',
-                    'url'   => 'menu.form.link_type.url',
-                    'widget'   => 'menu.form.link_type.widget'
-                ),
-                'attr'        => array(
-                    'class'    => 'item-type',
-                    'onchange' => 'trackButtonTypeChange(this);'
-                )
-            ))
-            ->add('link', null, array(
-                'label' => 'widget.button.form.label.link',
-                'attr'  => array('class' => 'url-type')
-            ))
-            ->add('page', 'entity', array(
-                'label'       => 'menu.form.page.label',
-                'required'    => false,
-                'empty_value' => 'menu.form.page.blank',
-                'class'       => 'VictoirePageBundle:Page',
-                'property'    => 'name',
-                'attr'        => array('class' => 'page-type'),
-            ))
-            ->add('attachedWidget', 'entity', array(
-                'label'       => 'menu.form.attachedWidget.label',
-                'required'    => false,
-                'empty_value' => 'menu.form.attachedWidget.blank',
-                'class'       => 'VictoireWidgetBundle:Widget',
-            ))
-            ->add('route', null, array(
-                'label' => 'widget.button.form.label.route',
-                'attr'  => array('class' => 'route-type')
-            ))
-            ->add($builder->create('route_parameters', 'text', array(
-                'label'      => 'widget.button.form.label.route_parameters',
-                'attr'       => array('class' => 'route-type')
-                )
-            )->addModelTransformer($transformer))
-            ->add('target', 'choice', array(
-                'label'   => 'widget.button.form.label.target',
-                'choices' => array(
-                    '_parent' => 'widget.button.form.choice.target.parent',
-                    '_blank'  => 'widget.button.form.choice.target.blank',
-                    'ajax-modal'  => 'widget.button.form.choice.target.ajax-modal',
-                ),
-                'required'  => true))
+
             ->add('size', 'choice', array(
                 'label'   => 'widget.button.form.label.size',
                 'choices' => array(
@@ -108,7 +58,9 @@ class WidgetButtonType extends WidgetType
                     'link'    => 'widget.button.form.choice.style.label.link'
                 ),
                 'required'  => true,
-            ));
+            ))
+            ->add('link', 'victoire_link')
+            ;
 
         parent::buildForm($builder, $options);
     }
