@@ -3,15 +3,7 @@
 {% block content %}
 
 {% set targetTag = target == "ajax-modal" ? 'data-toggle=' ~ target : 'target=' ~ target|default('_parent') %}
-
-{% if linkType == 'page' %}
-    {% set url = path('victoire_core_page_show', {'url' : page.url }) %}
-{% elseif linkType == 'route'  %}
-    {% set url = path(route, routeParameters) %}
-{% elseif linkType == 'widget'  %}
-    {% set url = path('victoire_core_page_show', {'url' : attachedWidget.view.url }) ~ "#vic-widget-" ~ attachedWidget.id ~ "-container" %}
-{% endif %}
-    <a href="{{ url }}" {{ targetTag }} title="{{ hoverTitle }}" class="btn btn-{{ size }} btn-{{ style }}">
-        {{ title|raw|nl2br }}
-    </a>
+<a href="{{ vic_link_url(linkParameters) }}" {{ targetTag }} title="{{ hoverTitle }}" class="btn btn-{{ size }} btn-{{ style }}">
+    {{ title|raw|nl2br }}
+</a>
 {% endblock content %}
