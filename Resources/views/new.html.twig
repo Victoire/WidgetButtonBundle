@@ -1,7 +1,22 @@
 {% extends 'VictoireCoreBundle:Widget:new.html.twig' %}
 
-{% block body %}
-{{ parent() }}
+{% block form_static %}
+<div id="picker-{{ form.mode.vars.data }}" class="vic-tab-pane vic-active">
+    {{ form_start(form) }}
+    <div class="row">
+        <div class="col-md-6">
+            {{ form_row(form.title) }}
+            {{ form_row(form.hoverTitle) }}
+            {{ form_row(form.size) }}
+            {{ form_row(form.style) }}
+        </div>
+        <div class="col-md-6">
+            {{ form_widget(form.link) }}
+        </div>
+            {{ form_rest(form) }}
+    </div>
+    {{ form_end(form) }}
+</div>
 
 <script type="text/javascript">
     showSelectedLinkType($vic('.linkType-select'))

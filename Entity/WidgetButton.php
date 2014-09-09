@@ -23,7 +23,7 @@ class WidgetButton extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="hoverTitle", type="string", length=55)
+     * @ORM\Column(name="hoverTitle", type="string", length=55, nullable=true)
      */
     protected $hoverTitle;
 
