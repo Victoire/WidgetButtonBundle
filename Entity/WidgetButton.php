@@ -16,7 +16,7 @@ class WidgetButton extends Widget
     /**
      * @var string
      *
-     * @ORM\Column(name="title", type="string", length=55)
+     * @ORM\Column(name="title", type="string", length=255)
      */
     protected $title;
 
