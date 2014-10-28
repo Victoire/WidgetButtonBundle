@@ -50,6 +50,7 @@ class WidgetButtonType extends WidgetType
             ->add('style', 'choice', array(
                 'label'   => 'widget.button.form.label.style',
                 'choices'   => array(
+                    'default' => 'widget.button.form.choice.style.label.default',
                     'primary' => 'widget.button.form.choice.style.label.primary',
                     'success' => 'widget.button.form.choice.style.label.success',
                     'info'    => 'widget.button.form.choice.style.label.info',
