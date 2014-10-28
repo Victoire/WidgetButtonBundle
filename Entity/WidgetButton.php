@@ -43,6 +43,13 @@ class WidgetButton extends Widget
     protected $style;
 
     /**
+     * @var bool
+     *
+     * @ORM\Column(name="is_block", type="boolean")
+     */
+    protected $isBlock;
+
+    /**
      * Set title
      *
      * @param string $title
@@ -136,6 +143,28 @@ class WidgetButton extends Widget
     public function getSize()
     {
         return $this->size;
+    }
+
+    /**
+     * Get isBlock
+     *
+     * @return string
+     */
+    public function getIsBlock()
+    {
+        return $this->isBlock;
+    }
+    
+    /**
+     * Set isBlock
+     *
+     * @param string $isBlock
+     * @return $this
+     */
+    public function setIsBlock($isBlock)
+    {
+        $this->isBlock = $isBlock;
+        return $this;
     }
 
 }

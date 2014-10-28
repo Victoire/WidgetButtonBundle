@@ -171,6 +171,10 @@
         <source>widget.button.form.choice.style.label.danger</source>
         <target>Danger</target>
       </trans-unit>
+      <trans-unit resname="widget.button.form.label.isBlock">
+        <source>widget.button.form.label.isBlock</source>
+        <target>Prend toute la largeur</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

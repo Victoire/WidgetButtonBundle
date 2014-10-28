@@ -60,6 +60,9 @@ class WidgetButtonType extends WidgetType
                 'required'  => true,
             ))
             ->add('link', 'victoire_link')
+            ->add('isBlock', null, array(
+                'label'   => 'widget.button.form.label.isBlock',
+            ))
             ;
 
         parent::buildForm($builder, $options);
