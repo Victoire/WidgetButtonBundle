@@ -64,6 +64,9 @@ class WidgetButtonType extends WidgetType
             ->add('isBlock', null, array(
                 'label'   => 'widget.button.form.label.isBlock',
             ))
+            ->add('isCallToAction', null, array(
+                'label'   => 'widget.button.form.label.isBlock.isCallToAction',
+            ))
             ;
 
         parent::buildForm($builder, $options);

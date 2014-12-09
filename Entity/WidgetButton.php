@@ -50,6 +50,13 @@ class WidgetButton extends Widget
     protected $isBlock;
 
     /**
+     * @var bool
+     *
+     * @ORM\Column(name="is_callToAction", type="boolean")
+     */
+    protected $isCallToAction;
+
+    /**
      * Set title
      *
      * @param string $title
@@ -164,6 +171,28 @@ class WidgetButton extends Widget
     public function setIsBlock($isBlock)
     {
         $this->isBlock = $isBlock;
+        return $this;
+    }
+
+    /**
+     * Get isCallToAction
+     *
+     * @return string
+     */
+    public function getIsCallToAction()
+    {
+        return $this->isCallToAction;
+    }
+    
+    /**
+     * Set isCallToAction
+     *
+     * @param string $isCallToAction
+     * @return $this
+     */
+    public function setIsCallToAction($isCallToAction)
+    {
+        $this->isCallToAction = $isCallToAction;
         return $this;
     }
 
