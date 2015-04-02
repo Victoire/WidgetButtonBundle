@@ -175,8 +175,8 @@
         <source>widget.button.form.label.isBlock</source>
         <target>Prend toute la largeur</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.label.isCallToAction">
-        <source>widget.button.form.label.isCallToAction</source>
+      <trans-unit resname="widget.button.form.label.isBlock.isCallToAction">
+        <source>widget.button.form.label.isBlock.isCallToAction</source>
         <target>Call to Action ?</target>
       </trans-unit>
     </body>
