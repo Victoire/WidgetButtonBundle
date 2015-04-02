@@ -3,20 +3,35 @@
 {% block form_static %}
 <div id="picker-{{ form.mode.vars.data }}" class="vic-tab-pane vic-active">
     {{ form_start(form) }}
-    <div class="row">
-        <div class="col-md-6">
+
+    <div class="vic-row">
+        <div class="vic-col-xs-4">
             {{ form_row(form.title) }}
+
             {{ form_row(form.hoverTitle) }}
-            {{ form_row(form.size) }}
-            {{ form_row(form.style) }}
-            {{ form_row(form.isBlock) }}
-            {{ form_row(form.isCallToAction) }}
         </div>
-        <div class="col-md-6">
+
+        <div class="vic-col-xs-4">
+            {{ form_row(form.size) }}
+
+            {{ form_row(form.style) }}
+
+            <div class="vic-clearfix">
+                {{ form_row(form.isBlock) }}
+            </div>
+
+            <div class="vic-clearfix">
+                {{ form_row(form.isCallToAction) }}
+            </div>
+        </div>
+
+        <div class="vic-col-xs-4">
             {{ form_widget(form.link) }}
         </div>
-            {{ form_rest(form) }}
+
+        {{ form_rest(form) }}
     </div>
+
     {{ form_end(form) }}
 </div>
 
