@@ -21,6 +21,11 @@
         <target>Petit</target>
         <jms:reference-file line="38">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
       </trans-unit>
+      <trans-unit id="c6567245f663efccc5796438894bb207c583e56f" resname="widget.button.form.choice.style.label.default">
+        <source>widget.button.form.choice.style.label.default</source>
+        <target>Défault</target>
+        <jms:reference-file line="53">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
+      </trans-unit>
       <trans-unit id="c6567245f663efccc5796438894bb207c583e56e" resname="widget.button.form.choice.style.label.danger">
         <source>widget.button.form.choice.style.label.danger</source>
         <target>Attention</target>
