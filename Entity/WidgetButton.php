@@ -13,6 +13,7 @@ use Victoire\Bundle\WidgetBundle\Entity\Widget;
 class WidgetButton extends Widget
 {
     use \Victoire\Bundle\WidgetBundle\Entity\Traits\LinkTrait;
+
     /**
      * @var string
      *
@@ -161,16 +162,17 @@ class WidgetButton extends Widget
     {
         return $this->isBlock;
     }
-    
+
     /**
      * Set isBlock
-     *
      * @param string $isBlock
+     *
      * @return $this
      */
     public function setIsBlock($isBlock)
     {
         $this->isBlock = $isBlock;
+
         return $this;
     }
 
@@ -183,17 +185,17 @@ class WidgetButton extends Widget
     {
         return $this->isCallToAction;
     }
-    
+
     /**
      * Set isCallToAction
-     *
      * @param string $isCallToAction
+     *
      * @return $this
      */
     public function setIsCallToAction($isCallToAction)
     {
         $this->isCallToAction = $isCallToAction;
+
         return $this;
     }
-
 }
