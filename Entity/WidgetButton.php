@@ -58,6 +58,13 @@ class WidgetButton extends Widget
     protected $isCallToAction;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="icon", type="string", length=55, nullable=true)
+     */
+    protected $icon;
+
+    /**
      * Set title
      *
      * @param string $title
@@ -195,6 +202,29 @@ class WidgetButton extends Widget
     public function setIsCallToAction($isCallToAction)
     {
         $this->isCallToAction = $isCallToAction;
+
+        return $this;
+    }
+
+    /**
+     * Get icon
+     *
+     * @return string
+     */
+    public function getIcon()
+    {
+        return $this->icon;
+    }
+
+    /**
+     * Set icon
+     * @param string $icon
+     *
+     * @return $this
+     */
+    public function setIcon($icon)
+    {
+        $this->icon = $icon;
 
         return $this;
     }

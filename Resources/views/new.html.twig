@@ -7,6 +7,7 @@
     <div class="vic-row">
         <div class="vic-col-xs-4">
             {{ form_row(form.title) }}
+            {{ form_row(form.icon) }}
 
             {{ form_row(form.hoverTitle) }}
         </div>
@@ -34,8 +35,4 @@
 
     {{ form_end(form) }}
 </div>
-
-<script type="text/javascript">
-    showSelectedLinkType($vic('.linkType-select'))
-</script>
 {% endblock %}

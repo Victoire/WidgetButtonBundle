@@ -33,17 +33,17 @@ class WidgetButtonType extends WidgetType
         //if no entity is given, we generate the static form
         $builder
             ->add('title', null, array(
-                'label'      => 'widget.button.form.label.title'
+                'label'      => 'widget.button.form.label.title',
             ))
             ->add('hoverTitle', null, array(
-                'label'   => 'widget.button.form.label.hoverTitle'))
-
+                'label'   => 'widget.button.form.label.hoverTitle',
+            ))
             ->add('size', 'choice', array(
                 'label'   => 'widget.button.form.label.size',
                 'choices' => array(
                     'normal' => 'widget.button.form.choice.size.normal',
                     'tiny'   => 'widget.button.form.choice.size.tiny',
-                    'large'  => 'widget.button.form.choice.size.large'
+                    'large'  => 'widget.button.form.choice.size.large',
                 ),
                 'required'  => true,
             ))
@@ -56,7 +56,7 @@ class WidgetButtonType extends WidgetType
                     'info'    => 'widget.button.form.choice.style.label.info',
                     'warning' => 'widget.button.form.choice.style.label.warning',
                     'danger'  => 'widget.button.form.choice.style.label.danger',
-                    'link'    => 'widget.button.form.choice.style.label.link'
+                    'link'    => 'widget.button.form.choice.style.label.link',
                 ),
                 'required'  => true,
             ))
@@ -67,6 +67,7 @@ class WidgetButtonType extends WidgetType
             ->add('isCallToAction', null, array(
                 'label'   => 'widget.button.form.label.isBlock.isCallToAction',
             ))
+            ->add('icon', 'font_awesome_picker')
             ;
 
         parent::buildForm($builder, $options);
@@ -83,7 +84,7 @@ class WidgetButtonType extends WidgetType
         $resolver->setDefaults(array(
             'data_class'         => 'Victoire\Widget\ButtonBundle\Entity\WidgetButton',
             'widget'             => 'Button',
-            'translation_domain' => 'victoire'
+            'translation_domain' => 'victoire',
         ));
     }
 
