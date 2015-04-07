@@ -1,5 +1,5 @@
 {
-    "name"       : "victoire/button-widget",
+    "name"       : "appventus/button-widget",
     "type"       : "symfony-bundle",
     "description": "Victoire Cms Button component",
     "keywords"   : ["cms", "victoire", "button"],
