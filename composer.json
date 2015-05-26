@@ -1,20 +1,20 @@
 {
     "name"       : "friendsofvictoire/button-widget",
     "type"       : "symfony-bundle",
-    "description": "Victoire Cms Button component",
-    "keywords"   : ["cms", "victoire", "button"],
-    "homepage"   : "http://appventus.com",
-    "license"    : "MIT",
-    "authors"    : [
+    "description": "Victoire DCMS Button component",
+    "keywords": ["DCMS", "Victoire", "Button", "widget", "FriendsofVictoire", "Dynamic", "CMS"],
+    "homepage": "http://victoire.io",
+    "license": "MIT",
+    "authors": [
         {
-            "name" : "Leny Bernard",
-            "email": "leny@appventus.com"
+            "name": "Leny BERNARD",
+            "email": "leny@victoire.io"
         }
     ],
     "require": {
         "php"                      : ">=5.3.3",
         "symfony/framework-bundle" : "~2.3",
-        "victoire/victoire"        : ">=0.1.4"
+        "victoire/victoire"        : ">=1.0.0"
     },
     "autoload": {
         "psr-0": { "Victoire\\Widget\\ButtonBundle": "" }
