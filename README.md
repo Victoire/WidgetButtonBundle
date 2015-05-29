@@ -1,6 +1,8 @@
 ##Victoire DCMS Button Widget Bundle
 ============
 
+[![Join the chat at https://gitter.im/FriendsOfVictoire/WidgetButtonBundle](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/FriendsOfVictoire/WidgetButtonBundle?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Need to add buttons your Victoire website ?
 
 #Set Up Victoire
