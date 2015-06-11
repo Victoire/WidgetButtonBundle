@@ -2,7 +2,7 @@
 
 {% block content %}
 
-{% set targetTag = target == "ajax-modal" ? 'data-toggle=' ~ target : 'target=' ~ target|default('_parent') %}
+{% set targetTag = link.target == "ajax-modal" ? 'data-toggle=' ~ link.target : 'target=' ~ link.target|default('_parent') %}
 <a href="{{ vic_link_url(link.parameters) }}" {{ targetTag }} title="{{ hoverTitle }}" class="btn btn-{{ size }} btn-{{ style }}{% if isBlock %} btn-block{% endif %}">
     {% if icon %}
     <i class="fa {{icon}}"></i>
