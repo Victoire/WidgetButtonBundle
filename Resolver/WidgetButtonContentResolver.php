@@ -59,6 +59,7 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
         $twig->addGlobal($widget->getBusinessEntityName(), $entity);
 
         //Interpret variables in widget route parameters to be able to generate correct
+        $params = array();
         foreach ($widget->getLink()->getRouteParameters() as $key => $_routeParameter) {
             $params[$key] = $twig->render($_routeParameter);
         }
