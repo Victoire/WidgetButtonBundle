@@ -54,9 +54,9 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
         //Creates a new twig environment
         $twig = new \Twig_Environment(new \Twig_Loader_String());
 
-        //add global values for `entity` and `businessEntityName`
+        //add global values for `entity` and `businessEntityId`
         $twig->addGlobal('entity', $entity);
-        $twig->addGlobal($widget->getBusinessEntityName(), $entity);
+        $twig->addGlobal($widget->getBusinessEntityId(), $entity);
 
         //Interpret variables in widget route parameters to be able to generate correct
         $params = array();

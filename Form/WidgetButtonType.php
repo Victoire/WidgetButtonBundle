@@ -21,15 +21,6 @@ class WidgetButtonType extends WidgetType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $namespace = $options['namespace'];
-        $entityName = $options['entityName'];
-
-        if ($entityName !== null) {
-            if ($namespace === null) {
-                throw new \Exception('The namespace is mandatory if the entity_name is given.');
-            }
-        }
-
         //if no entity is given, we generate the static form
         $builder
             ->add('title', null, array(
