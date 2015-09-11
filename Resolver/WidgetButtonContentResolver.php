@@ -15,7 +15,7 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
      */
     public function getWidgetBusinessEntityContent(Widget $widget)
     {
-        if ($entity = $widget->getEntity()) {
+        if ($entity = $widget->getEntity() && 'route' === $widget->getLink()->getLinkType()) {
             //Read into route parameters with twig
             $this->readIntoWidgetRouteParameters($widget);
         }
@@ -36,7 +36,7 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
      */
     public function getWidgetEntityContent(Widget $widget)
     {
-        if ($entity = $widget->getEntity()) {
+        if ($entity = $widget->getEntity() && 'route' === $widget->getLink()->getLinkType()) {
             //Read into route parameters with twig
             $this->readIntoWidgetRouteParameters($widget);
         }
