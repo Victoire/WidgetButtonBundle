@@ -1,12 +1,5 @@
 {% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
-
-{% set targetTag = link.target == "ajax-modal" ? 'data-toggle=' ~ link.target : 'target=' ~ link.target|default('_parent') %}
-<a href="{{ vic_link_url(link.parameters) }}" {{ targetTag }} title="{{ hoverTitle }}" class="btn btn-{{ size }} btn-{{ style }}{% if isBlock %} btn-block{% endif %}">
-    {% if icon %}
-    <i class="fa {{icon}}"></i>
-    {% endif %}
-    {{ title|raw|nl2br }}
-</a>
+    {{ vic_link(link.parameters, label, attributes) }}
 {% endblock content %}
