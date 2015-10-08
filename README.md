@@ -4,8 +4,6 @@
 This bundle installs the Button Widget in your Victoire project.
 With this widget, you can set up a button anywhere on your website which can link to :
 
-The categories can link to :
-
 * Internal pages
 * URL
 * A routing setting
@@ -17,7 +15,7 @@ You can define the size and style of the button
 
 If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
 
-#Install the Button Bundle :
+##Install the Button Bundle :
 
 Run the following composer command :
 
