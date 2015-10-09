@@ -1,7 +1,7 @@
 {
     "name"       : "friendsofvictoire/button-widget",
     "type"       : "symfony-bundle",
-    "description": "Victoire DCMS Button component",
+    "description": "Victoire DCMS Button widget",
     "keywords": ["DCMS", "Victoire", "Button", "widget", "FriendsofVictoire", "Dynamic", "CMS"],
     "homepage": "http://victoire.io",
     "license": "MIT",

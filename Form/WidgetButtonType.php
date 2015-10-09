@@ -32,8 +32,8 @@ class WidgetButtonType extends WidgetType
             ->add('size', 'choice', array(
                 'label'   => 'widget.button.form.label.size',
                 'choices' => array(
-                    'md' => 'widget.button.form.choice.size.normal',
-                    'sm'   => 'widget.button.form.choice.size.tiny',
+                    'md'  => 'widget.button.form.choice.size.normal',
+                    'sm'  => 'widget.button.form.choice.size.tiny',
                     'lg'  => 'widget.button.form.choice.size.large',
                 ),
                 'required'  => true,

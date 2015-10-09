@@ -1,21 +1,27 @@
-##Victoire DCMS Button Widget Bundle
+#Victoire DCMS Button Bundle
 ============
 
-[![Join the chat at https://gitter.im/FriendsOfVictoire/WidgetButtonBundle](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/FriendsOfVictoire/WidgetButtonBundle?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+This bundle installs the Button Widget in your Victoire project.
+With this widget, you can set up a button anywhere on your website which can link to :
 
-Need to add buttons your Victoire website ?
+* Internal pages
+* URL
+* A routing setting
+* An anchor - i.e a widget within a page
 
-#Set Up Victoire
+You can define the size and style of the button
+
+##Set Up Victoire
 
 If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
 
-#Install the Simple Contact Form Bundle :
+##Install the Button Bundle :
 
 Run the following composer command :
 
     php composer.phar require friendsofvictoire/button-widget
 
-#Reminder
+##Reminder
 
 Do not forget to add the bundle in your AppKernel !
 

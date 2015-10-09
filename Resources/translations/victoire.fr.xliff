@@ -9,72 +9,14 @@
       <trans-unit id="1ad2369b96af7b70ed16767d578f4b1f4e570ce8" resname="widget.button.form.choice.size.large">
         <source>widget.button.form.choice.size.large</source>
         <target>Large</target>
-        <jms:reference-file line="41">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
-      </trans-unit>
-      <trans-unit id="217e67f11ec47aed2d6f786469691c68a9626767" resname="widget.button.form.choice.size.normal">
-        <source>widget.button.form.choice.size.normal</source>
-        <target>Normal (par défaut)</target>
-        <jms:reference-file line="39">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
-      </trans-unit>
-      <trans-unit id="4cdb390b95b83bce92911623c43d0d6b1ea0048d" resname="widget.button.form.choice.size.tiny">
-        <source>widget.button.form.choice.size.tiny</source>
-        <target>Petit</target>
-        <jms:reference-file line="38">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
       </trans-unit>
       <trans-unit id="c6567245f663efccc5796438894bb207c583e56f" resname="widget.button.form.choice.style.label.default">
         <source>widget.button.form.choice.style.label.default</source>
-        <target>Défault</target>
-        <jms:reference-file line="53">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
-      </trans-unit>
-      <trans-unit id="c6567245f663efccc5796438894bb207c583e56e" resname="widget.button.form.choice.style.label.danger">
-        <source>widget.button.form.choice.style.label.danger</source>
-        <target>Attention</target>
-        <jms:reference-file line="53">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
-      </trans-unit>
-      <trans-unit id="e0e3c348215038898b3a3d90310b862992020387" resname="widget.button.form.choice.style.label.info">
-        <source>widget.button.form.choice.style.label.info</source>
-        <target>Informatif</target>
-        <jms:reference-file line="50">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
-      </trans-unit>
-      <trans-unit id="eefc7f6bfdf44da7c7d5e58e99104f1e3d001647" resname="widget.button.form.choice.style.label.primary">
-        <source>widget.button.form.choice.style.label.primary</source>
-        <target>Principal (par défaut)</target>
-        <jms:reference-file line="48">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
-      </trans-unit>
-      <trans-unit id="76d6f2018d23e4a8cf88c642d75e4eb5de4e3d77" resname="widget.button.form.choice.style.label.success">
-        <source>widget.button.form.choice.style.label.success</source>
-        <target>Succès</target>
-        <jms:reference-file line="49">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
-      </trans-unit>
-      <trans-unit id="d84d9577cf655a088b66225d05c93c7816c6357a" resname="widget.button.form.choice.style.label.warning">
-        <source>widget.button.form.choice.style.label.warning</source>
-        <target>Avertissement</target>
-        <jms:reference-file line="51">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
-      </trans-unit>
-      <trans-unit id="bd610992389b1d341392a54a1feba0b5b12394ab" resname="widget.button.form.label.link">
-        <source>widget.button.form.label.link</source>
-        <target>Lien</target>
-        <jms:reference-file line="32">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
-      </trans-unit>
-      <trans-unit id="7385a3ada8460d005d973015849268cf3b936b00" resname="widget.button.form.label.size">
-        <source>widget.button.form.label.size</source>
-        <target>Taille</target>
-        <jms:reference-file line="36">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
-      </trans-unit>
-      <trans-unit id="b1b56c1d02cdf432af7569a7af296d3d3218c342" resname="widget.button.form.label.style">
-        <source>widget.button.form.label.style</source>
-        <target>Apparence</target>
-        <jms:reference-file line="46">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
-      </trans-unit>
-      <trans-unit id="9fb8e1b27732ecdb6970d488505c128efd82396d" resname="widget.button.form.label.target">
-        <source>widget.button.form.label.target</source>
-        <target>Cible du lien</target>
-        <jms:reference-file line="34">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
+        <target>Par défaut</target>
       </trans-unit>
       <trans-unit id="2f4f2167cda4a0d7f51681b3535c666b81def969" resname="widget.button.form.label.title">
         <source>widget.button.form.label.title</source>
         <target>Libellé</target>
-        <jms:reference-file line="30">ButtonBundle/Form/WidgetButtonType.php</jms:reference-file>
       </trans-unit>
       <trans-unit resname="widget.button.new.action.label">
         <source>widget.button.new.action.label</source>
@@ -88,50 +30,6 @@
         <source>widget.button.form.label.hoverTitle</source>
         <target>Texte au survol</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.choice.target.parent">
-        <source>widget.button.form.choice.target.parent</source>
-        <target>Même page (par défaut)</target>
-      </trans-unit>
-      <trans-unit resname="widget.button.form.choice.target.blank">
-        <source>widget.button.form.choice.target.blank</source>
-        <target>Onglet</target>
-      </trans-unit>
-      <trans-unit resname="widget.button.form.choice.target.ajax-modal">
-        <source>widget.button.form.choice.target.ajax-modal</source>
-        <target>Fenêtre modale</target>
-      </trans-unit>
-      <trans-unit resname="widget.button.form.link_type.route">
-        <source>widget.button.form.link_type.route</source>
-        <target>Route</target>
-      </trans-unit>
-      <trans-unit resname="widget.button.form.label.route">
-        <source>widget.button.form.label.route</source>
-        <target>Nom de la route</target>
-      </trans-unit>
-      <trans-unit resname="widget.button.form.label.route_parameters">
-        <source>widget.button.form.label.route_parameters</source>
-        <target>Paramètres de la route</target>
-      </trans-unit>
-      <trans-unit resname="menu.form.link_type.widget">
-        <source>menu.form.link_type.widget</source>
-        <target>Ancre (Widget)</target>
-      </trans-unit>
-      <trans-unit resname="menu.form.attachedWidget.label">
-        <source>menu.form.attachedWidget.label</source>
-        <target>Cible de l'ancre (Widget)</target>
-      </trans-unit>
-      <trans-unit resname="menu.form.attachedWidget.label">
-        <source>menu.form.attachedWidget.label</source>
-        <target>Ancre (Widget)</target>
-      </trans-unit>
-      <trans-unit resname="widget.button.form.label.route_parameters">
-        <source>widget.button.form.label.route_parameters</source>
-        <target>Paramètres de la route</target>
-      </trans-unit>
-      <trans-unit resname="widget.button.form.label.target">
-        <source>widget.button.form.label.target</source>
-        <target>Comportement du lien</target>
-      </trans-unit>
       <trans-unit resname="widget.button.form.label.size">
         <source>widget.button.form.label.size</source>
         <target>Taille du bouton</target>
@@ -143,10 +41,6 @@
       <trans-unit resname="widget.button.form.choice.size.tiny">
         <source>widget.button.form.choice.size.tiny</source>
         <target>Petit</target>
-      </trans-unit>
-      <trans-unit resname="widget.button.form.choice.size.large">
-        <source>widget.button.form.choice.size.large</source>
-        <target>Large</target>
       </trans-unit>
       <trans-unit resname="widget.button.form.label.style">
         <source>widget.button.form.label.style</source>
@@ -162,7 +56,7 @@
       </trans-unit>
       <trans-unit resname="widget.button.form.choice.style.label.success">
         <source>widget.button.form.choice.style.label.success</source>
-        <target>Succes</target>
+        <target>Succès</target>
       </trans-unit>
       <trans-unit resname="widget.button.form.choice.style.label.info">
         <source>widget.button.form.choice.style.label.info</source>
