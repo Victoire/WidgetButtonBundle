@@ -9,7 +9,7 @@ use Victoire\Widget\ButtonBundle\Entity\WidgetButton;
 class WidgetButtonContentResolver extends BaseWidgetContentResolver
 {
     /**
-     * Get the static content of the widget
+     * Get the static content of the widget.
      *
      * @param Widget $widget
      *
@@ -24,7 +24,8 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
     }
 
     /**
-     * Get the business entity content
+     * Get the business entity content.
+     *
      * @param Widget $widget
      *
      * @return string
@@ -44,12 +45,11 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
     }
 
     /**
-     * Get the content of the widget by the entity linked to it
+     * Get the content of the widget by the entity linked to it.
      *
      * @param Widget $widget
      *
      * @return string
-     *
      */
     public function getWidgetEntityContent(Widget $widget)
     {
@@ -66,14 +66,14 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
     }
 
     /**
-     * Get the content of the widget for the query mode
+     * Get the content of the widget for the query mode.
      *
      * @param Widget $widget
      *
      * @return string
-     *
      */
-    public function getWidgetQueryContent(Widget $widget) {
+    public function getWidgetQueryContent(Widget $widget)
+    {
         $parameters = parent::getWidgetQueryContent($widget);
         $parameters = $this->setButtonParameters($widget, $parameters);
 
@@ -92,24 +92,25 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
         $twig->addGlobal($widget->getBusinessEntityId(), $entity);
 
         //Interpret variables in widget route parameters to be able to generate correct
-        $params = array();
+        $params = [];
         foreach ($widget->getLink()->getRouteParameters() as $key => $_routeParameter) {
             $params[$key] = $twig->render($_routeParameter);
         }
         $widget->getLink()->setRouteParameters($params);
     }
 
-    protected function setButtonParameters(Widget $widget, $parameters) {
-        /** @var WidgetButton $widget */
-        $icon = ($parameters['icon']) ? "<i class='fa " . $parameters['icon'] . "'></i>" : "";
-        $label = $icon . " " . $parameters['title'];
+    protected function setButtonParameters(Widget $widget, $parameters)
+    {
+        /* @var WidgetButton $widget */
+        $icon = ($parameters['icon']) ? "<i class='fa ".$parameters['icon']."'></i>" : '';
+        $label = $icon.' '.$parameters['title'];
 
-        $block = ($parameters['isBlock']) ? "btn-block" : "";
-        $class = "btn btn-" . $parameters['size'] . " btn-" . $parameters['style'] . " " . $block;
+        $block = ($parameters['isBlock']) ? 'btn-block' : '';
+        $class = 'btn btn-'.$parameters['size'].' btn-'.$parameters['style'].' '.$block;
         $title = $parameters['hoverTitle'];
 
         $parameters = array_merge($parameters, ['attributes' => ['class' => $class, 'title' => $title], 'label' => $label]);
+
         return $parameters;
     }
-
 }
