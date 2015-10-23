@@ -1,4 +1,5 @@
 <?php
+
 namespace Victoire\Widget\ButtonBundle\Command;
 
 use Doctrine\ORM\Tools\DisconnectedClassMetadataFactory;
@@ -10,7 +11,7 @@ use Victoire\Bundle\CoreBundle\Entity\Link;
 class ButtonSizeMigratorCommand extends ContainerAwareCommand
 {
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function configure()
     {
@@ -22,7 +23,8 @@ class ButtonSizeMigratorCommand extends ContainerAwareCommand
     }
 
     /**
-     * Read declared business entities and BusinessEntityPatternPages to generate their urls
+     * Read declared business entities and BusinessEntityPatternPages to generate their urls.
+     *
      * @param InputInterface  $input
      * @param OutputInterface $output
      *
@@ -42,9 +44,9 @@ class ButtonSizeMigratorCommand extends ContainerAwareCommand
             $progress->advance();
             if ($button->getSize() == 'large') {
                 $button->setSize('lg');
-            } else if ($button->getSize() == 'tiny') {
+            } elseif ($button->getSize() == 'tiny') {
                 $button->setSize('sm');
-            } else if ($button->getSize() == 'normal') {
+            } elseif ($button->getSize() == 'normal') {
                 $button->setSize('md');
             }
 

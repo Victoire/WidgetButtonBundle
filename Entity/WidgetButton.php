@@ -1,11 +1,12 @@
 <?php
+
 namespace Victoire\Widget\ButtonBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetButton
+ * WidgetButton.
  *
  * @ORM\Table("vic_widget_button")
  * @ORM\Entity
@@ -65,7 +66,7 @@ class WidgetButton extends Widget
     protected $icon;
 
     /**
-     * Set title
+     * Set title.
      *
      * @param string $title
      *
@@ -79,7 +80,7 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Get title
+     * Get title.
      *
      * @return string
      */
@@ -89,7 +90,7 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Set hoverTitle
+     * Set hoverTitle.
      *
      * @param string $hoverTitle
      *
@@ -103,7 +104,7 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Get hoverTitle
+     * Get hoverTitle.
      *
      * @return string
      */
@@ -113,7 +114,7 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Set style
+     * Set style.
      *
      * @param string $style
      *
@@ -127,7 +128,7 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Get style
+     * Get style.
      *
      * @return string
      */
@@ -137,7 +138,7 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Set size
+     * Set size.
      *
      * @param string $size
      *
@@ -151,7 +152,7 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Get size
+     * Get size.
      *
      * @return string
      */
@@ -161,7 +162,7 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Get isBlock
+     * Get isBlock.
      *
      * @return string
      */
@@ -171,7 +172,8 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Set isBlock
+     * Set isBlock.
+     *
      * @param string $isBlock
      *
      * @return $this
@@ -184,7 +186,7 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Get isCallToAction
+     * Get isCallToAction.
      *
      * @return string
      */
@@ -194,7 +196,8 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Set isCallToAction
+     * Set isCallToAction.
+     *
      * @param string $isCallToAction
      *
      * @return $this
@@ -207,7 +210,7 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Get icon
+     * Get icon.
      *
      * @return string
      */
@@ -217,7 +220,8 @@ class WidgetButton extends Widget
     }
 
     /**
-     * Set icon
+     * Set icon.
+     *
      * @param string $icon
      *
      * @return $this

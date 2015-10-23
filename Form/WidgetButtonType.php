@@ -7,12 +7,12 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
 /**
- * WidgetButton form type
+ * WidgetButton form type.
  */
 class WidgetButtonType extends WidgetType
 {
     /**
-     * define form fields
+     * define form fields.
      *
      * @param FormBuilderInterface $builder
      * @param array                $options
@@ -23,24 +23,24 @@ class WidgetButtonType extends WidgetType
     {
         //if no entity is given, we generate the static form
         $builder
-            ->add('title', null, array(
+            ->add('title', null, [
                 'label'      => 'widget.button.form.label.title',
-            ))
-            ->add('hoverTitle', null, array(
+            ])
+            ->add('hoverTitle', null, [
                 'label'   => 'widget.button.form.label.hoverTitle',
-            ))
-            ->add('size', 'choice', array(
+            ])
+            ->add('size', 'choice', [
                 'label'   => 'widget.button.form.label.size',
-                'choices' => array(
+                'choices' => [
                     'md'  => 'widget.button.form.choice.size.normal',
                     'sm'  => 'widget.button.form.choice.size.tiny',
                     'lg'  => 'widget.button.form.choice.size.large',
-                ),
+                ],
                 'required'  => true,
-            ))
-            ->add('style', 'choice', array(
+            ])
+            ->add('style', 'choice', [
                 'label'   => 'widget.button.form.label.style',
-                'choices'   => array(
+                'choices'   => [
                     'default' => 'widget.button.form.choice.style.label.default',
                     'primary' => 'widget.button.form.choice.style.label.primary',
                     'success' => 'widget.button.form.choice.style.label.success',
@@ -48,39 +48,39 @@ class WidgetButtonType extends WidgetType
                     'warning' => 'widget.button.form.choice.style.label.warning',
                     'danger'  => 'widget.button.form.choice.style.label.danger',
                     'link'    => 'widget.button.form.choice.style.label.link',
-                ),
+                ],
                 'required'  => true,
-            ))
+            ])
             ->add('link', 'victoire_link')
-            ->add('isBlock', null, array(
+            ->add('isBlock', null, [
                 'label'   => 'widget.button.form.label.isBlock',
-            ))
-            ->add('isCallToAction', null, array(
+            ])
+            ->add('isCallToAction', null, [
                 'label'   => 'widget.button.form.label.isBlock.isCallToAction',
-            ))
-            ->add('icon', 'font_awesome_picker')
-            ;
+            ])
+            ->add('icon', 'font_awesome_picker');            ;
 
         parent::buildForm($builder, $options);
     }
 
     /**
-     * bind form to WidgetButton entity
+     * bind form to WidgetButton entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\ButtonBundle\Entity\WidgetButton',
             'widget'             => 'Button',
             'translation_domain' => 'victoire',
-        ));
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
      *
      * @return string
      */
