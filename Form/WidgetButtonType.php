@@ -39,7 +39,7 @@ class WidgetButtonType extends WidgetType
                 'required'  => true,
             ])
             ->add('style', 'choice', [
-                'label'   => 'widget.button.form.label.style',
+                'label'     => 'widget.button.form.label.style',
                 'choices'   => [
                     'default' => 'widget.button.form.choice.style.label.default',
                     'primary' => 'widget.button.form.choice.style.label.primary',
@@ -58,7 +58,7 @@ class WidgetButtonType extends WidgetType
             ->add('isCallToAction', null, [
                 'label'   => 'widget.button.form.label.isBlock.isCallToAction',
             ])
-            ->add('icon', 'font_awesome_picker');            ;
+            ->add('icon', 'font_awesome_picker');
 
         parent::buildForm($builder, $options);
     }

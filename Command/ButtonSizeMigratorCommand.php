@@ -2,11 +2,9 @@
 
 namespace Victoire\Widget\ButtonBundle\Command;
 
-use Doctrine\ORM\Tools\DisconnectedClassMetadataFactory;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Victoire\Bundle\CoreBundle\Entity\Link;
 
 class ButtonSizeMigratorCommand extends ContainerAwareCommand
 {
