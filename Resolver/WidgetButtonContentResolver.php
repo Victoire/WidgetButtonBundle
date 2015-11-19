@@ -108,8 +108,22 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
         $block = ($parameters['isBlock']) ? 'btn-block' : '';
         $class = 'btn btn-'.$parameters['size'].' btn-'.$parameters['style'].' '.$block;
         $title = $parameters['hoverTitle'];
+        $attributes = [
+            'class' => $class,
+            'title' => $title,
+        ];
 
-        $parameters = array_merge($parameters, ['attributes' => ['class' => $class, 'title' => $title], 'label' => $label]);
+        $tooltipId = ['tooltipId' => null];
+        if ($parameters['tooltipable']) {
+            $id = "vic_button_tooltip_" . $widget->getId();
+            $attributes = array_merge($attributes, ['id' => $id,]);
+            $tooltipId = ['tooltipId' => $id,];
+        }
+
+        $parameters = array_merge($parameters, [
+            'attributes' => $attributes,
+            'label'      => $label,
+        ], $tooltipId);
 
         return $parameters;
     }
