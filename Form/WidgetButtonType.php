@@ -58,6 +58,9 @@ class WidgetButtonType extends WidgetType
             ->add('isCallToAction', null, [
                 'label'   => 'widget.button.form.label.isBlock.isCallToAction',
             ])
+            ->add('tooltipable', null, [
+                'label'   => 'widget.button.form.label.tooltipable',
+            ])
             ->add('icon', 'font_awesome_picker');
 
         parent::buildForm($builder, $options);
