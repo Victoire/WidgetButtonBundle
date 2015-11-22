@@ -1,5 +1,16 @@
 {% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
 
 {% block content %}
-    {{ vic_link(link.parameters, label, attributes) }}
+    {% spaceless %}
+        {{ vic_link(link.parameters, label, attributes) }}
+        {% block button_script %}
+            {% if tooltipable %}
+                <script>
+                    <!--
+                    $("#{{ tooltipId }}").tooltip();
+                    -->
+                </script>
+            {% endif %}
+        {% endblock button_script %}
+    {% endspaceless %}
 {% endblock content %}

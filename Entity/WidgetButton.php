@@ -59,6 +59,13 @@ class WidgetButton extends Widget
     protected $isCallToAction;
 
     /**
+     * @var bool
+     *
+     * @ORM\Column(name="tooltipable", type="boolean")
+     */
+    protected $tooltipable;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="icon", type="string", length=55, nullable=true)
@@ -231,5 +238,21 @@ class WidgetButton extends Widget
         $this->icon = $icon;
 
         return $this;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isTooltipable()
+    {
+        return $this->tooltipable;
+    }
+
+    /**
+     * @param bool $tooltipable
+     */
+    public function setTooltipable($tooltipable)
+    {
+        $this->tooltipable = $tooltipable;
     }
 }
