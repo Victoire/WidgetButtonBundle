@@ -115,9 +115,9 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
 
         $tooltipId = ['tooltipId' => null];
         if ($parameters['tooltipable']) {
-            $id = "vic_button_tooltip_" . $widget->getId();
-            $attributes = array_merge($attributes, ['id' => $id,]);
-            $tooltipId = ['tooltipId' => $id,];
+            $id = 'vic_button_tooltip_'.$widget->getId();
+            $attributes = array_merge($attributes, ['id' => $id]);
+            $tooltipId = ['tooltipId' => $id];
         }
 
         $parameters = array_merge($parameters, [

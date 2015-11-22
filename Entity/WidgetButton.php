@@ -241,7 +241,7 @@ class WidgetButton extends Widget
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
     public function isTooltipable()
     {
@@ -249,11 +249,10 @@ class WidgetButton extends Widget
     }
 
     /**
-     * @param boolean $tooltipable
+     * @param bool $tooltipable
      */
     public function setTooltipable($tooltipable)
     {
         $this->tooltipable = $tooltipable;
     }
-
 }
