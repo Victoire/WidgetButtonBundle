@@ -82,6 +82,10 @@
         <source>widget.button.form.label.isBlock.isCallToAction</source>
         <target>Call to Action ?</target>
       </trans-unit>
+      <trans-unit resname="widget.button.form.label.tooltipable">
+        <source>widget.button.form.label.tooltipable</source>
+        <target>Active title as a tooltip ?</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
