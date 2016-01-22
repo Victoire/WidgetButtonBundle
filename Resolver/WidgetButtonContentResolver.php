@@ -85,16 +85,19 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
         $entity = $widget->getEntity();
 
         //Creates a new twig environment
-        $twig = new \Twig_Environment(new \Twig_Loader_String());
+        $twig = new \Twig_Environment(new \Twig_Loader_Array([]));
 
         //add global values for `entity` and `businessEntityId`
-        $twig->addGlobal('entity', $entity);
-        $twig->addGlobal($widget->getBusinessEntityId(), $entity);
+        $vars = [
+            'entity'                       => $entity,
+            $widget->getBusinessEntityId() => $entity
+        ];
 
         //Interpret variables in widget route parameters to be able to generate correct
         $params = [];
         foreach ($widget->getLink()->getRouteParameters() as $key => $_routeParameter) {
-            $params[$key] = $twig->render($_routeParameter);
+            $template = $twig->createTemplate($_routeParameter);
+            $params[$key] = $template->render($vars);
         }
         $widget->getLink()->setRouteParameters($params);
     }
