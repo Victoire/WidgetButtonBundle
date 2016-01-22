@@ -90,7 +90,7 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
         //add global values for `entity` and `businessEntityId`
         $vars = [
             'entity'                       => $entity,
-            $widget->getBusinessEntityId() => $entity
+            $widget->getBusinessEntityId() => $entity,
         ];
 
         //Interpret variables in widget route parameters to be able to generate correct
