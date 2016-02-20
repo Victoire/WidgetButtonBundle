@@ -2,9 +2,12 @@
 
 namespace Victoire\Widget\ButtonBundle\Form;
 
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
+use Victoire\Bundle\FormBundle\Form\Type\FontAwesomePickerType;
+use Victoire\Bundle\FormBundle\Form\Type\LinkType;
 
 /**
  * WidgetButton form type.
@@ -29,7 +32,7 @@ class WidgetButtonType extends WidgetType
             ->add('hoverTitle', null, [
                 'label'   => 'widget.button.form.label.hoverTitle',
             ])
-            ->add('size', 'choice', [
+            ->add('size', ChoiceType::class, [
                 'label'   => 'widget.button.form.label.size',
                 'choices' => [
                     'md'  => 'widget.button.form.choice.size.normal',
@@ -38,7 +41,7 @@ class WidgetButtonType extends WidgetType
                 ],
                 'required'  => true,
             ])
-            ->add('style', 'choice', [
+            ->add('style', ChoiceType::class, [
                 'label'     => 'widget.button.form.label.style',
                 'choices'   => [
                     'default' => 'widget.button.form.choice.style.label.default',
@@ -51,7 +54,7 @@ class WidgetButtonType extends WidgetType
                 ],
                 'required'  => true,
             ])
-            ->add('link', 'victoire_link')
+            ->add('link', LinkType::class)
             ->add('isBlock', null, [
                 'label'   => 'widget.button.form.label.isBlock',
             ])
@@ -61,34 +64,22 @@ class WidgetButtonType extends WidgetType
             ->add('tooltipable', null, [
                 'label'   => 'widget.button.form.label.tooltipable',
             ])
-            ->add('icon', 'font_awesome_picker');
+            ->add('icon', FontAwesomePickerType::class);
 
         parent::buildForm($builder, $options);
     }
 
     /**
-     * bind form to WidgetButton entity.
-     *
-     * @param OptionsResolverInterface $resolver
+     * {@inheritdoc}
      */
-    public function setDefaultOptions(OptionsResolverInterface $resolver)
+    public function configureOptions(OptionsResolver $resolver)
     {
-        parent::setDefaultOptions($resolver);
+        parent::configureOptions($resolver);
 
         $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\ButtonBundle\Entity\WidgetButton',
             'widget'             => 'Button',
             'translation_domain' => 'victoire',
         ]);
-    }
-
-    /**
-     * get form name.
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return 'victoire_widget_form_button';
     }
 }
