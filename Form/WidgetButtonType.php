@@ -35,22 +35,22 @@ class WidgetButtonType extends WidgetType
             ->add('size', ChoiceType::class, [
                 'label'   => 'widget.button.form.label.size',
                 'choices' => [
-                    'md'  => 'widget.button.form.choice.size.normal',
-                    'sm'  => 'widget.button.form.choice.size.tiny',
-                    'lg'  => 'widget.button.form.choice.size.large',
+                    'widget.button.form.choice.size.normal' => 'md',
+                    'widget.button.form.choice.size.tiny'   => 'sm',
+                    'widget.button.form.choice.size.large'  => 'lg',
                 ],
                 'required'  => true,
             ])
             ->add('style', ChoiceType::class, [
                 'label'     => 'widget.button.form.label.style',
                 'choices'   => [
-                    'default' => 'widget.button.form.choice.style.label.default',
-                    'primary' => 'widget.button.form.choice.style.label.primary',
-                    'success' => 'widget.button.form.choice.style.label.success',
-                    'info'    => 'widget.button.form.choice.style.label.info',
-                    'warning' => 'widget.button.form.choice.style.label.warning',
-                    'danger'  => 'widget.button.form.choice.style.label.danger',
-                    'link'    => 'widget.button.form.choice.style.label.link',
+                    'widget.button.form.choice.style.label.default' => 'default',
+                    'widget.button.form.choice.style.label.primary' => 'primary',
+                    'widget.button.form.choice.style.label.success' => 'success',
+                    'widget.button.form.choice.style.label.info'    => 'info',
+                    'widget.button.form.choice.style.label.warning' => 'warning',
+                    'widget.button.form.choice.style.label.danger'  => 'danger',
+                    'widget.button.form.choice.style.label.link'    => 'link',
                 ],
                 'required'  => true,
             ])
