@@ -1,6 +1,5 @@
 services:
     victoire_core.widget_button_content_resolver:
-        parent: victoire_widget.base_widget_content_resolver
         class: Victoire\Widget\ButtonBundle\Resolver\WidgetButtonContentResolver
         tags:
             - { name: victoire_widget.widget_content_resolver, alias: Button }

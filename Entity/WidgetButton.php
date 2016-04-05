@@ -3,6 +3,7 @@
 namespace Victoire\Widget\ButtonBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
@@ -17,6 +18,7 @@ class WidgetButton extends Widget
 
     /**
      * @var string
+     * @Assert\NotBlank()
      *
      * @ORM\Column(name="title", type="string", length=255)
      */

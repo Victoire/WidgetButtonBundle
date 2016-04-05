@@ -64,7 +64,10 @@ class WidgetButtonType extends WidgetType
             ->add('tooltipable', null, [
                 'label'   => 'widget.button.form.label.tooltipable',
             ])
-            ->add('icon', FontAwesomePickerType::class);
+            ->add('icon', FontAwesomePickerType::class, [
+                'label'   => 'widget.button.form.label.icon',
+                'required' => false,
+            ]);
 
         parent::buildForm($builder, $options);
     }

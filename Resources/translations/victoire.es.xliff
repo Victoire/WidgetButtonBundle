@@ -86,6 +86,10 @@
         <source>widget.button.form.label.tooltipable</source>
         <target>¿ Título activo como una tooltip ?</target>
       </trans-unit>
+      <trans-unit resname="widget.button.form.label.icon">
+        <source>widget.button.form.label.icon</source>
+        <target>Icon</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
