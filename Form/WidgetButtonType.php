@@ -39,6 +39,7 @@ class WidgetButtonType extends WidgetType
                     'widget.button.form.choice.size.tiny'   => 'sm',
                     'widget.button.form.choice.size.large'  => 'lg',
                 ],
+                'choices_as_values' => true,
                 'required'  => true,
             ])
             ->add('style', ChoiceType::class, [
@@ -52,6 +53,7 @@ class WidgetButtonType extends WidgetType
                     'widget.button.form.choice.style.label.danger'  => 'danger',
                     'widget.button.form.choice.style.label.link'    => 'link',
                 ],
+                'choices_as_values' => true,
                 'required'  => true,
             ])
             ->add('link', LinkType::class)
