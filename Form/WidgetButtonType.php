@@ -40,7 +40,7 @@ class WidgetButtonType extends WidgetType
                     'widget.button.form.choice.size.large'  => 'lg',
                 ],
                 'choices_as_values' => true,
-                'required'  => true,
+                'required'          => true,
             ])
             ->add('style', ChoiceType::class, [
                 'label'     => 'widget.button.form.label.style',
@@ -54,7 +54,7 @@ class WidgetButtonType extends WidgetType
                     'widget.button.form.choice.style.label.link'    => 'link',
                 ],
                 'choices_as_values' => true,
-                'required'  => true,
+                'required'          => true,
             ])
             ->add('link', LinkType::class)
             ->add('isBlock', null, [
@@ -67,7 +67,7 @@ class WidgetButtonType extends WidgetType
                 'label'   => 'widget.button.form.label.tooltipable',
             ])
             ->add('icon', FontAwesomePickerType::class, [
-                'label'   => 'widget.button.form.label.icon',
+                'label'    => 'widget.button.form.label.icon',
                 'required' => false,
             ]);
 
