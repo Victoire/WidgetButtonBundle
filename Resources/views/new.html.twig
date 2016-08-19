@@ -1,7 +1,6 @@
 {% extends 'VictoireCoreBundle:Widget:new.html.twig' %}
 
 {% block form_static %}
-<div id="picker-{{ form.mode.vars.data }}" class="vic-tab-pane vic-active">
     {{ form_start(form) }}
 
     <div class="vic-row">
@@ -38,5 +37,4 @@
     </div>
 
     {{ form_end(form) }}
-</div>
 {% endblock %}
