@@ -106,7 +106,7 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
     {
         /* @var WidgetButton $widget */
         $icon = ($parameters['icon']) ? "<i class='fa ".$parameters['icon']."'></i>" : '';
-        $label = $icon.' '.$parameters['title'];
+        $label = trim($icon.' '.$parameters['title']);
 
         $block = ($parameters['isBlock']) ? 'btn-block' : '';
         $class = 'btn btn-'.$parameters['size'].' btn-'.$parameters['style'].' '.$block;
