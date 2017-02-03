@@ -1,92 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file date="2013-12-18T19:01:42Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
-    <header>
-      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
-      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
-    </header>
     <body>
-      <trans-unit id="1ad2369b96af7b70ed16767d578f4b1f4e570ce8" resname="widget.button.form.choice.size.large">
+      <trans-unit id="58893b8ec979d" resname="widget.button.form.choice.size.large">
         <source>widget.button.form.choice.size.large</source>
         <target>Large</target>
       </trans-unit>
-      <trans-unit id="217e67f11ec47aed2d6f786469691c68a9626767" resname="widget.button.form.choice.size.small">
+      <trans-unit id="58893b8ec97df" resname="widget.button.form.choice.size.small">
         <source>widget.button.form.choice.size.small</source>
         <target>Medium</target>
       </trans-unit>
-      <trans-unit id="c6567245f663efccc5796438894bb207c583e56e" resname="widget.button.form.choice.style.label.danger">
+      <trans-unit id="58893b8ec97f3" resname="widget.button.form.choice.style.label.danger">
         <source>widget.button.form.choice.style.label.danger</source>
         <target>Danger</target>
       </trans-unit>
-      <trans-unit id="d9f7c3cc967f89438391b8697ea9e2e2e77cc307" resname="widget.button.form.choice.style.label.default">
+      <trans-unit id="58893b8ec9805" resname="widget.button.form.choice.style.label.default">
         <source>widget.button.form.choice.style.label.default</source>
         <target>Default</target>
       </trans-unit>
-      <trans-unit id="e0e3c348215038898b3a3d90310b862992020387" resname="widget.button.form.choice.style.label.info">
+      <trans-unit id="58893b8ec9816" resname="widget.button.form.choice.style.label.info">
         <source>widget.button.form.choice.style.label.info</source>
         <target>Informative</target>
       </trans-unit>
-      <trans-unit id="eefc7f6bfdf44da7c7d5e58e99104f1e3d001647" resname="widget.button.form.choice.style.label.primary">
+      <trans-unit id="58893b8ec9827" resname="widget.button.form.choice.style.label.primary">
         <source>widget.button.form.choice.style.label.primary</source>
         <target>Primary</target>
       </trans-unit>
-      <trans-unit id="76d6f2018d23e4a8cf88c642d75e4eb5de4e3d77" resname="widget.button.form.choice.style.label.success">
+      <trans-unit id="58893b8ec9838" resname="widget.button.form.choice.style.label.success">
         <source>widget.button.form.choice.style.label.success</source>
         <target>Success</target>
       </trans-unit>
-      <trans-unit id="d84d9577cf655a088b66225d05c93c7816c6357a" resname="widget.button.form.choice.style.label.warning">
+      <trans-unit id="58893b8ec9849" resname="widget.button.form.choice.style.label.warning">
         <source>widget.button.form.choice.style.label.warning</source>
         <target>Warning</target>
       </trans-unit>
-      <trans-unit id="7385a3ada8460d005d973015849268cf3b936b00" resname="widget.button.form.label.size">
+      <trans-unit id="58893b8ec985a" resname="widget.button.form.label.size">
         <source>widget.button.form.label.size</source>
         <target>Button's size</target>
       </trans-unit>
-      <trans-unit id="b1b56c1d02cdf432af7569a7af296d3d3218c342" resname="widget.button.form.label.style">
+      <trans-unit id="58893b8ec986b" resname="widget.button.form.label.style">
         <source>widget.button.form.label.style</source>
         <target>Button's style</target>
       </trans-unit>
-      <trans-unit id="2f4f2167cda4a0d7f51681b3535c666b81def969" resname="widget.button.form.label.title">
+      <trans-unit id="58893b8ec987c" resname="widget.button.form.label.title">
         <source>widget.button.form.label.title</source>
         <target>Label</target>
       </trans-unit>
-      <trans-unit resname="widget.button.new.action.label">
+      <trans-unit resname="widget.button.new.action.label" id="58893b8ec989c">
         <source>widget.button.new.action.label</source>
         <target>Button</target>
       </trans-unit>
-      <trans-unit resname="modal.form.widget.type.button.label">
+      <trans-unit resname="modal.form.widget.type.button.label" id="58893b8ec98c5">
         <source>modal.form.widget.type.button.label</source>
         <target>Button</target>
       </trans-unit>
-        <trans-unit resname="widget.button.form.label.hoverTitle">
+        <trans-unit resname="widget.button.form.label.hoverTitle" id="58893b8ec98e0">
         <source>widget.button.form.label.hoverTitle</source>
         <target>Hover text</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.choice.size.normal">
+      <trans-unit resname="widget.button.form.choice.size.normal" id="58893b8ec98fa">
         <source>widget.button.form.choice.size.normal</source>
         <target>Regular</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.choice.size.tiny">
+      <trans-unit resname="widget.button.form.choice.size.tiny" id="58893b8ec9913">
         <source>widget.button.form.choice.size.tiny</source>
         <target>Tiny</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.choice.style.label.link">
+      <trans-unit resname="widget.button.form.choice.style.label.link" id="58893b8ec992d">
         <source>widget.button.form.choice.style.label.link</source>
         <target>Link</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.label.isBlock">
+      <trans-unit resname="widget.button.form.label.isBlock" id="58893b8ec9947">
         <source>widget.button.form.label.isBlock</source>
         <target>Full width</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.label.isBlock.isCallToAction">
+      <trans-unit resname="widget.button.form.label.isBlock.isCallToAction" id="58893b8ec9960">
         <source>widget.button.form.label.isBlock.isCallToAction</source>
         <target>Call to Action ?</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.label.tooltipable">
+      <trans-unit resname="widget.button.form.label.tooltipable" id="58893b8ec9979">
         <source>widget.button.form.label.tooltipable</source>
         <target>Active title as a tooltip ?</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.label.icon">
+      <trans-unit resname="widget.button.form.label.icon" id="58893b8ec999e">
         <source>widget.button.form.label.icon</source>
         <target>Icon</target>
       </trans-unit>

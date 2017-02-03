@@ -1,92 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
   <file date="2013-12-18T19:00:29Z" source-language="en" target-language="fr" datatype="plaintext" original="not.available">
-    <header>
-      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
-      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
-    </header>
     <body>
-      <trans-unit id="1ad2369b96af7b70ed16767d578f4b1f4e570ce8" resname="widget.button.form.choice.size.large">
+      <trans-unit id="58893b8ecb37d" resname="widget.button.form.choice.size.large">
         <source>widget.button.form.choice.size.large</source>
         <target>Large</target>
       </trans-unit>
-      <trans-unit id="c6567245f663efccc5796438894bb207c583e56f" resname="widget.button.form.choice.style.label.default">
+      <trans-unit id="58893b8ecb399" resname="widget.button.form.choice.style.label.default">
         <source>widget.button.form.choice.style.label.default</source>
         <target>Par défaut</target>
       </trans-unit>
-      <trans-unit id="2f4f2167cda4a0d7f51681b3535c666b81def969" resname="widget.button.form.label.title">
+      <trans-unit id="58893b8ecb3a9" resname="widget.button.form.label.title">
         <source>widget.button.form.label.title</source>
         <target>Libellé</target>
       </trans-unit>
-      <trans-unit resname="widget.button.new.action.label">
+      <trans-unit resname="widget.button.new.action.label" id="58893b8ecb3c4">
         <source>widget.button.new.action.label</source>
         <target>Bouton</target>
       </trans-unit>
-      <trans-unit resname="modal.form.widget.type.button.label">
+      <trans-unit resname="modal.form.widget.type.button.label" id="58893b8ecb3de">
         <source>modal.form.widget.type.button.label</source>
         <target>Bouton</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.label.hoverTitle">
+      <trans-unit resname="widget.button.form.label.hoverTitle" id="58893b8ecb3f5">
         <source>widget.button.form.label.hoverTitle</source>
         <target>Texte au survol</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.label.size">
+      <trans-unit resname="widget.button.form.label.size" id="58893b8ecb40c">
         <source>widget.button.form.label.size</source>
         <target>Taille du bouton</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.choice.size.normal">
+      <trans-unit resname="widget.button.form.choice.size.normal" id="58893b8ecb423">
         <source>widget.button.form.choice.size.normal</source>
         <target>Normale</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.choice.size.tiny">
+      <trans-unit resname="widget.button.form.choice.size.tiny" id="58893b8ecb439">
         <source>widget.button.form.choice.size.tiny</source>
         <target>Petit</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.label.style">
+      <trans-unit resname="widget.button.form.label.style" id="58893b8ecb44f">
         <source>widget.button.form.label.style</source>
         <target>Style du bouton</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.choice.style.label.link">
+      <trans-unit resname="widget.button.form.choice.style.label.link" id="58893b8ecb466">
         <source>widget.button.form.choice.style.label.link</source>
         <target>Lien</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.choice.style.label.primary">
+      <trans-unit resname="widget.button.form.choice.style.label.primary" id="58893b8ecb47d">
         <source>widget.button.form.choice.style.label.primary</source>
         <target>Principal</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.choice.style.label.success">
+      <trans-unit resname="widget.button.form.choice.style.label.success" id="58893b8ecb493">
         <source>widget.button.form.choice.style.label.success</source>
         <target>Succès</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.choice.style.label.info">
+      <trans-unit resname="widget.button.form.choice.style.label.info" id="58893b8ecb4a9">
         <source>widget.button.form.choice.style.label.info</source>
         <target>Informatif</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.choice.style.label.warning">
+      <trans-unit resname="widget.button.form.choice.style.label.warning" id="58893b8ecb4bf">
         <source>widget.button.form.choice.style.label.warning</source>
         <target>Avertissement</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.choice.style.label.danger">
+      <trans-unit resname="widget.button.form.choice.style.label.danger" id="58893b8ecb4d4">
         <source>widget.button.form.choice.style.label.danger</source>
         <target>Danger</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.label.isBlock">
+      <trans-unit resname="widget.button.form.label.isBlock" id="58893b8ecb4eb">
         <source>widget.button.form.label.isBlock</source>
         <target>Prend toute la largeur</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.label.isBlock.isCallToAction">
+      <trans-unit resname="widget.button.form.label.isBlock.isCallToAction" id="58893b8ecb501">
         <source>widget.button.form.label.isBlock.isCallToAction</source>
         <target>Call to Action ?</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.label.tooltipable">
+      <trans-unit resname="widget.button.form.label.tooltipable" id="58893b8ecb516">
         <source>widget.button.form.label.tooltipable</source>
         <target>Activer le titre en tooltip ?</target>
       </trans-unit>
-      <trans-unit resname="widget.button.form.label.icon">
+      <trans-unit resname="widget.button.form.label.icon" id="58893b8ecb52c">
         <source>widget.button.form.label.icon</source>
         <target>Icône</target>
       </trans-unit>
     </body>
   </file>
 </xliff>
-
