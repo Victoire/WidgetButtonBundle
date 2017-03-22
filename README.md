@@ -1,7 +1,7 @@
-Victoire DCMS Button Bundle
+Victoire Button Bundle
 ============
 
-##What is the purpose of this bundle
+## What is the purpose of this bundle
 
 This bundle installs the *Button Widget* on your Victoire project.
 With this widget, you can set up a button anywhere on your website which can link to :
@@ -13,17 +13,17 @@ With this widget, you can set up a button anywhere on your website which can lin
 
 You can define the size and style of the button
 
-##Set Up Victoire
+## Set Up Victoire
 
-If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
+If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/doc/setup.md)*
 
-##Install the bundle :
+## Install the bundle :
 
 Run the following composer command :
 
-    php composer.phar require friendsofvictoire/button-widget
+    php composer.phar require victoire/button-widget
 
-###Reminder
+### Reminder
 
 Do not forget to add the bundle in your AppKernel !
 
