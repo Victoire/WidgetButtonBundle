@@ -1,0 +1,28 @@
+machine:
+  timezone:
+    Europe/Paris
+  services:
+    - redis
+  php:
+    version: 7.1.0
+
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init
+
+dependencies:
+  override:
+    - bash victoire-test-suite/dependencies.sh victoire/button-widget
+  cache_directories:
+    - ~/.composer/cache
+
+test:
+  override:
+    - bash victoire-test-suite/circle.sh victoire/button-widget:
+        parallel: true
+    - bash victoire-test-suite/test.sh victoire/button-widget
+
+general:
+  artifacts:
+    - "fails"
