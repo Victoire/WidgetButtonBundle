@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/Victoire/WidgetButtonBundle.svg?style=shield)](https://circleci.com/gh/Victoire/WidgetButtonBundle)
+
 Victoire Button Bundle
 ============
 
