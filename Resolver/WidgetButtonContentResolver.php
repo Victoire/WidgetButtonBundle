@@ -105,7 +105,7 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
     protected function setButtonParameters(Widget $widget, $parameters)
     {
         /* @var WidgetButton $widget */
-        $icon = ($parameters['icon']) ? "<i class='fa ".$parameters['icon']."'></i>" : '';
+        $icon = ($parameters['icon']) ? "<i class='fa ".$parameters['icon']."' aria-hidden=true></i>" : '';
         $label = trim($icon.' '.$parameters['title']);
 
         $block = ($parameters['isBlock']) ? 'btn-block' : '';
