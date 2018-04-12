@@ -112,8 +112,9 @@ class WidgetButtonContentResolver extends BaseWidgetContentResolver
         $class = 'btn btn-'.$parameters['size'].' btn-'.$parameters['style'].' '.$block;
         $title = $parameters['hoverTitle'];
         $attributes = [
-            'class' => $class,
-            'title' => $title,
+            'class'      => $class,
+            'title'      => $title,
+            'aria-label' => $title,
         ];
 
         $tooltipId = ['tooltipId' => null];
