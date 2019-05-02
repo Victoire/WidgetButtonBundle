@@ -1,0 +1,15 @@
+{
+  "require_all":
+  {
+    "javascripts":
+    {
+    },
+    "stylesheets":
+    {
+      "print":
+      [
+        "@VictoireWidgetButtonBundle/Resources/public/css/print.css"
+      ]
+    }
+  }
+}
